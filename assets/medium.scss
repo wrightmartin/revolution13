@@ -133,3 +133,52 @@ body {
 	}
 }
 
+.fringe {
+	.event {
+		margin-bottom: 4em;
+		img {
+			display: block;
+			width: 21.6%;
+			float: left;
+		}
+		h3,
+		h4,
+		p {
+			background: #fff;
+			margin-left: 23.6%;
+		}
+	}
+	
+}
+
+.two-cols-equal {
+	.col1 {
+		width: 47%;
+		margin-right: 6%;
+		float: left;
+	}
+	.col2 {
+		width: 47%;
+		float: left;
+		font-size: 0.875em;
+	}
+}
+
+.map {
+	position: relative;
+	 > img {
+	 			min-width:40em;
+	}
+	.conference-centre-info {
+		position: absolute;
+		max-width: 15em;
+		top: 1em;
+		@media(screen and min-width: 56em) {
+			max-width: 20em;
+			top:5em;
+		}
+		
+		left: 27%;
+	}
+}
+

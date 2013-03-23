@@ -13,16 +13,18 @@
 }
 
 
+.schedule {
+	.the-day {
+		width: 63.5%;
+		float: left;
+		margin-right: 5%;
+}
+	.fringe-teaser {
+		width: 24.5%;
+		float: left;
+	}
+}
 
-.the-day {
-	width: 63.5%;
-	float: left;
-	margin-right: 5%;
-}
-.fringe {
-	width: 24.5%;
-	float: left;
-}
 
 
 .sitefooter {
@@ -39,5 +41,32 @@
 		width: 17.6%;
 	}
 	
+}
 
+.fringe {
+	.intro {
+		float: left;
+		width: 16%;
+		padding: 1.5em 2%;
+		p {
+			font-size: 0.875em;
+			line-height: 1.5em;
+		}
+	}
+	.events {
+		float: left;
+		width: 77%;
+		margin-left: 3%;
+	}
+}
+
+.two-cols-equal {
+	.col1 {
+		width: 35.2%;
+		margin-right: 6%;
+
+	}
+	.col2 {
+		width: 35.2%;
+	}
 }

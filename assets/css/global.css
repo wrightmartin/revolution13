@@ -170,7 +170,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em; }
 
 /*
@@ -288,7 +288,7 @@ form {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -451,8 +451,9 @@ h1, h2, h3 {
   text-transform: uppercase; }
 
 h4, h5, h6 {
-  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif;
-  font-weight: 400; }
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 h1 {
   font-size: 3.75em;
@@ -472,10 +473,9 @@ h3 {
   line-height: 1.2em; }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   /*20*/
-  line-height: 1.2em;
-  font-weight: 400; }
+  line-height: 1.2em; }
 
 a {
   color: #c1503e;
@@ -502,7 +502,7 @@ a {
   border-radius: 2px; }
 
 .container {
-  max-width: 1600;
+  max-width: 1600px;
   width: 92%;
   margin: 0 auto;
   padding: 0 4%; }
@@ -580,7 +580,7 @@ a {
   background: #fff; }
   .page-title h1 {
     margin: 0;
-    padding: 0.5em 0; }
+    padding: .5em 0; }
 
 .hero {
   background-position-x: center;
@@ -724,11 +724,11 @@ a {
       display: block;
       color: #fff;
       background: #c1503e;
-      padding: 0.33em 4.5%;
+      padding: .33em 4.5%;
       text-transform: none;
       font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif; }
   .register-box h3 {
-    padding: 0 4.5% 0.33em;
+    padding: 0 4.5% .33em;
     text-transform: none;
     font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif;
     font-size: 1em; }
@@ -832,6 +832,7 @@ a {
     -ms-background-size: 16px 16px;
     background-size: 16px 16px;
     font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
     margin-left: -1.5em; }
   .scheduled-event.speaker time {
     background-image: url(../img/red-dot.png); }
@@ -839,10 +840,12 @@ a {
     color: #666666;
     margin-bottom: 0;
     font-size: 1em;
-    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600; }
   .scheduled-event.speaker h2 {
     font-size: 2.5em;
-    font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
+    font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500; }
   .scheduled-event a.reveal {
     color: #c1503e; }
     .scheduled-event a.reveal:hover {
@@ -865,18 +868,49 @@ a {
   .scheduled-event p {
     margin-bottom: .5em; }
 
-.fringe {
+.schedule .fringe-teaser {
   background: #ececec;
   padding: 1.5em 2%;
   font-size: 0.875em; }
-  .fringe h3 {
-    margin-bottom: 0.35em; }
-  .fringe h4 {
+  .schedule .fringe-teaser h3 {
+    margin-bottom: 0.35em;
+    color: #caa75b; }
+  .schedule .fringe-teaser h4 {
     font-size: 1em;
     margin-bottom: 0.5em;
     font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     color: #666666; }
-  .fringe p {
+  .schedule .fringe-teaser p {
     line-height: 1.5em; }
+
+.fringe .intro {
+  background: #ececec;
+  padding: 1.5em 4%;
+  margin-bottom: 1.5em; }
+  .fringe .intro h2 {
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1em;
+    color: #caa75b;
+    font-weight: 600; }
+.fringe h3 {
+  font-size: 2.5em; }
+.fringe h4 {
+  font-size: .888888889em;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: 600;
+  margin-bottom: 0.5em; }
+.fringe .event img {
+  display: none; }
+
+.location .conference-centre-info {
+  background: #c1503e;
+  color: #fff; }
+  .location .conference-centre-info img {
+    line-height: 1em; }
+  .location .conference-centre-info .vcard {
+    padding: .5em 4% 1em; }
+    .location .conference-centre-info .vcard .street-address span {
+      display: block; }
