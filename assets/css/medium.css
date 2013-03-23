@@ -81,15 +81,25 @@ body {
     display: inline-block;
     text-align: right;
     width: 4em;
-    padding: 0 1.5em 0 0; }
+    padding: 0 1.5em 0 0;
+    background-position-x: right;
+    margin-left: 0; }
   .scheduled-event img {
-    position: absolute;
-    top: 0em;
-    right: 0;
-    width: 10%; }
+    width: 15%;
+    float: right;
+    margin-left: 1em;
+    margin-top: 0; }
   .scheduled-event h2,
   .scheduled-event h3,
-  .scheduled-event .details,
   .scheduled-event > p {
     margin-left: 13%;
     margin-right: 13%; }
+  .scheduled-event .details {
+    margin-left: 13%; }
+    .scheduled-event .details:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0; }

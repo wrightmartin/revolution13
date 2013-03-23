@@ -415,7 +415,7 @@ a {
  
 .scheduled-event {
 	border-bottom: 5px solid $bordergrey;
-	padding: 1em 0 0.5em;
+	padding: 1em 0 0.5em 1.3em;
 	&:first-child {
 		border-top: 5px solid $bordergrey;
 	}
@@ -425,10 +425,11 @@ a {
 	}
 	time {
 		color: $midgrey;
-		background: #fff url(../img/grey-dot.png) right center no-repeat;
-		padding-right: 1.5em;
+		background: #fff url(../img/grey-dot.png) left center no-repeat;
+		padding-left: 1.5em;
 		@include prefix(background-size, 16px 16px); 
 		font-family: $sans;
+		margin-left: -1.5em;
 	}
 	&.speaker {
 		time {
@@ -476,8 +477,11 @@ a {
 	}
 	
 	p {
-		margin-bottom: 0;
+		margin-bottom: .5em;
+
 	}
+	
+	
 }
 
 .fringe {

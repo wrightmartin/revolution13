@@ -816,7 +816,7 @@ a {
  */
 .scheduled-event {
   border-bottom: 5px solid #e9e9e9;
-  padding: 1em 0 0.5em; }
+  padding: 1em 0 0.5em 1.3em; }
   .scheduled-event:first-child {
     border-top: 5px solid #e9e9e9; }
   .scheduled-event:last-child {
@@ -824,14 +824,15 @@ a {
     border-left: none; }
   .scheduled-event time {
     color: #666666;
-    background: white url(../img/grey-dot.png) right center no-repeat;
-    padding-right: 1.5em;
+    background: white url(../img/grey-dot.png) left center no-repeat;
+    padding-left: 1.5em;
     -webkit-background-size: 16px 16px;
     -moz-background-size: 16px 16px;
     -o-background-size: 16px 16px;
     -ms-background-size: 16px 16px;
     background-size: 16px 16px;
-    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    margin-left: -1.5em; }
   .scheduled-event.speaker time {
     background-image: url(../img/red-dot.png); }
   .scheduled-event h2 {
@@ -862,7 +863,7 @@ a {
     color: #666666;
     line-height: 1.5em; }
   .scheduled-event p {
-    margin-bottom: 0; }
+    margin-bottom: .5em; }
 
 .fringe {
   background: #ececec;
