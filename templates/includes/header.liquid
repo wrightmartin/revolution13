@@ -1,0 +1,46 @@
+	<nav class="sitenav container" role="navigation">
+			<ul>	
+				<li 
+					{% if mixture.url == "index" %}
+							class="current"
+					{% endif %}>
+					<a href="/">Home</a></li>
+				<li
+					{% if mixture.url == "about" %}
+						class="current"
+					{% endif %}><a href="about">About</a>
+				</li>
+				<li
+					{% if mixture.url == "location" %}
+						class="current"
+					{% endif %}>
+						<a href="location">Location</a></li>
+				<li
+					{% if mixture.url == "schedule" %}
+						class="current"
+					{% endif %}>
+						<a href="schedule">Schedule</a></li>
+				<li
+					{% if mixture.url == "fringe" %}
+						class="current"
+					{% endif %}>
+						<a href="fringe">Fringe</a></li>
+				<li
+					{% if mixture.url == "register" %}
+						class="current"
+					{% endif %}>
+						<a href="register">Register</a></li>
+			</ul>	
+		</nav>
+	<header class="siteheader" role="banner">
+		
+		<div class="container">
+			<div class="title">
+				<h1>Shropgeek (R)evolution</h1>
+			</div>
+			<div class="where-and-when">
+				<p class="date">Friday, 27 September 2013</p>
+				<p class="location">Shropshire Conference Centre, Shrewsbury</p>
+			</div>
+		</div>
+	</header>

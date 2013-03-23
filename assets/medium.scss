@@ -1,0 +1,129 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+	font-size: 1.125em;
+}
+.siteheader {
+	.title {
+		width: 50%;
+		float: left;
+		padding-bottom: 1em;
+		h1 {
+			margin: 0;
+		}
+	}
+	.where-and-when {
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+}
+
+.about {
+	.about-content {
+		@include clearfix();
+		max-width: 54em;
+		margin: 0 auto;
+		background: #fff;
+		div {
+			width: 47.5%;
+			margin-right: 5%;
+			float: left;
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.sitefooter {
+	> div {
+		float: left;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.presented-by {
+		width: 	100%;
+		margin-bottom: 2em;
+		p {
+			max-width: 34em;
+		}
+	}
+	.social-footer,
+	.about-footer,
+	.previous-footer {
+		width: 32%;
+		margin-right: 2%;
+	}
+	
+
+}
+
+.speakers {
+	padding-top: 4em;
+	h2 {
+		font-size: 3em;
+	}
+}
+
+.photo-grid {
+	li {
+		width: 32%;
+		margin-right: 2%;
+		&:nth-child(2n+2) {
+			margin-right: 2%;
+		}
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
+	}
+	
+}
+
+.register {
+	padding-top: 4em;
+	width: 100%;
+	float: left;
+	margin-right: 4%;
+	.register-box {
+		width: 100%;
+	}
+}
+
+.photo-grid {
+	width: 100%;
+	float: left;	
+}
+
+.scheduled-event {
+	position: relative;
+	padding: 1em 0 1em;
+	border-left: 5px solid $bordergrey;
+	time {
+		position: absolute;
+		left: .5em;
+		top: -.9em;
+		display: inline-block;
+		text-align: right;
+		width: 4em;
+		padding: 0 1.5em 0 0;
+	}
+	
+	img {
+		position: absolute;
+		top: 0em;
+		right: 0;
+		width: 10%;
+	}
+	
+	h2,
+	h3,
+	.details,
+	> p {
+		margin-left: 13%;
+		margin-right: 13%;
+	}
+}
+

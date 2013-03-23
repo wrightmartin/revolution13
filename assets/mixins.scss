@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+@mixin clearfix {
+	&:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+}
+
+@mixin button {
+	font-family: $futura;
+	display: inline-block;
+	padding: 0.75em 1.75em;
+	background: #333;
+	color: #fff;
+	border: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 0.75em;
+	@include prefix (border-radius, 2px);
+}
+
+$prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
+@mixin prefix($property, $value) { 
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: #{$value};
+    }
+}
+
+@mixin hoverActiveFocus {
+    &:hover, &:active, &:focus {
+        @content;
+    }
+}
+
+@mixin unstyled-list {
+	list-style: none outside none;
+	padding-left: 0;
+}
+
+@mixin horizontal-list {
+	li {
+		display: inline-block;
+	}
+}
+
+@mixin grayscale($amount: 0.5) {
+	@include prefix (filter, grayscale($amount));
+}
+
+@mixin background {
+	background: #fff;
+}
