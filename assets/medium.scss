@@ -164,21 +164,26 @@ body {
 	}
 }
 
-.map {
-	position: relative;
-	 > img {
-	 			min-width:40em;
+.two-cols-equal.third {
+	.col3 {
+		width: 47%;
+		float: left;
+		clear:both;
 	}
+}
+
+.map {
+	background: transparent url(../img/location-map-med.png) left center no-repeat;
+	@include prefix(background-size, cover);
+	position: relative;
+	min-height: 400px;
 	.conference-centre-info {
 		position: absolute;
 		max-width: 15em;
-		top: 1em;
-		@media(screen and min-width: 56em) {
-			max-width: 20em;
-			top:5em;
-		}
+		top: 3em;
 		
-		left: 27%;
+		
+		left: 145px;
 	}
 }
 

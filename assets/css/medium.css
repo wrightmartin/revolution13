@@ -125,16 +125,22 @@ body {
   float: left;
   font-size: 0.875em; }
 
+.two-cols-equal.third .col3 {
+  width: 47%;
+  float: left;
+  clear: both; }
+
 .map {
-  position: relative; }
-  .map > img {
-    min-width: 40em; }
+  background: transparent url(../img/location-map-med.png) left center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 400px; }
   .map .conference-centre-info {
     position: absolute;
     max-width: 15em;
-    top: 1em;
-    left: 27%; }
-    @media (min-width: 56em) {
-      .map .conference-centre-info {
-        max-width: 20em;
-        top: 5em; } }
+    top: 3em;
+    left: 145px; }

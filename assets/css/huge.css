@@ -4,3 +4,6 @@ body {
 
 .siteheader .title h1 {
   /*margin-left: -11%;*/ }
+
+.location .conference-centre-info {
+  left: 385px; }
