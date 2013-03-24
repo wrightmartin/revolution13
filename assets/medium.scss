@@ -151,7 +151,8 @@ body {
 	
 }
 
-.two-cols-equal {
+.two-cols,
+.three-cols {
 	.col1 {
 		width: 47%;
 		margin-right: 6%;
@@ -162,13 +163,10 @@ body {
 		float: left;
 		font-size: 0.875em;
 	}
-}
-
-.two-cols-equal.third {
 	.col3 {
 		width: 47%;
 		float: left;
-		clear:both;
+		clear: both;
 	}
 }
 

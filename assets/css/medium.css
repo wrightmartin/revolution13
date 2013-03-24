@@ -116,16 +116,18 @@ body {
     background: #fff;
     margin-left: 23.6%; }
 
-.two-cols-equal .col1 {
+.two-cols .col1,
+.three-cols .col1 {
   width: 47%;
   margin-right: 6%;
   float: left; }
-.two-cols-equal .col2 {
+.two-cols .col2,
+.three-cols .col2 {
   width: 47%;
   float: left;
   font-size: 0.875em; }
-
-.two-cols-equal.third .col3 {
+.two-cols .col3,
+.three-cols .col3 {
   width: 47%;
   float: left;
   clear: both; }

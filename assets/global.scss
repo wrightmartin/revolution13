@@ -487,23 +487,22 @@ a {
 	
 }
 .schedule {
-	.fringe-teaser {
-		background: $lightgrey;
-		padding: 1.5em 2%;
-		font-size: 0.875em;
-		h3 {
-			margin-bottom: 0.35em;
-			color: $gold;
+	.sponsors-teaser {
+				background: $lightgrey;
+		.content {
+					
+
+			padding: 1em 6%;
 		}
-		h4 {
+		font-size: 0.875em;
+		h2 {
 			font-size: 1em;
 			margin-bottom: 0.5em;
 			font-family: $sans;
 			font-weight: 600;
 			text-transform: uppercase;
-			color: $midgrey
+			color: $gold;
 		}
-		
 		p {
 			line-height: 1.5em;
 		}
