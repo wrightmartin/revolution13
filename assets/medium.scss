@@ -170,11 +170,23 @@ body {
 	}
 }
 
+.five-cols {
+	.unit {
+		width: 32%;
+		margin-right: 2%;
+		float: left;
+		margin-bottom: 2em;
+	}
+	.third {
+		margin-right: 0;
+	}
+}
 .map {
 	background: transparent url(../img/location-map-med.png) left center no-repeat;
 	@include prefix(background-size, cover);
 	position: relative;
 	min-height: 400px;
+	@include prefix(box-shadow, inset 0 1px 3px rgba(0,0,0,0.2));
 	.conference-centre-info {
 		position: absolute;
 		max-width: 15em;
@@ -184,4 +196,24 @@ body {
 		left: 145px;
 	}
 }
+
+.vista {
+	background: transparent url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
+	@include prefix(background-size, cover);
+	height: 600px;
+	@include prefix(box-shadow, inset 0 1px 3px rgba(0,0,0,0.2));
+	position: relative;
+}
+
+.where-to-stay {
+		.container {
+
+			 background: transparent;
+		color: #fff;
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 0;
+		}
+}
+
 

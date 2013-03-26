@@ -1,3 +1,74 @@
+
+/* GRIDS 
+
+	Using a 3 column grid based on a Hecton ratio with a 3% gutter
+	Column one (largest) : 41.44713695%;
+	Column two (middlest) : 30.34140976%;
+	Column three (smallest) : 22.21145328%;
+	
+	A two column version of this can be used, either right-left or left-right
+	
+	Column one (largest) : 74.78854671%;
+	Column three (smallest) : 22.21145328%;
+
+*/
+
+.two-cols {
+	.co1 {
+		width: 74.78854671%;
+		float: left;
+		margin-right: 3%;
+	}
+	
+	.col2 {
+		width: 22.21145328%;
+		float: left;
+	}
+}
+
+.two-cols-rl {
+	.col1 {
+		width: 22.21145328%;
+		float: left;
+		margin-right: 3%;
+	}
+	
+	.col2 {
+		width: 74.78854671%;
+		float: left;
+	}
+}
+
+.three-cols {
+	.col1 {
+		width: 41.44713695%;
+		margin-right: 3%;
+
+	}
+	.col2 {
+		width: 30.34140976%;
+		margin-right: 3%;
+	}
+	
+	.col3 {
+		width: 22.21145328%;
+		clear: none;
+	}
+}
+
+.five-cols {
+	.unit {
+		width: 18.4%;
+	}
+	.third {
+		margin-right: 2%;
+	}
+	.last {
+		margin-right: 0;
+	}
+}
+
+
 .photo-grid {
 	li {
 		width: 23.5%;
@@ -31,7 +102,6 @@
 
 .fringe {
 	.intro {
-		float: left;
 		width: 18.21145328%;
 		padding: 1.5em 2%;
 		p {
@@ -40,54 +110,11 @@
 		}
 	}
 	.events {
-		float: left;
-		width: 74.78854671%;
-		margin-left: 3%;
+
 	}
 }
 
-.two-cols {
-	.co1 {
-		width: 74.78854671%;
-		float: left;
-		margin-right: 3%;
-	}
-	
-	.col2 {
-		width: 22.21145328%;
-		float: left;
-	}
-}
-/* GRIDS 
 
-	Using a 3 column grid based on a Hecton ratio with a 3% gutter
-	Column one (largest) : 41.44713695%;
-	Column two (middlest) : 30.34140976%;
-	Column three (smallest) : 22.21145328%;
-	
-	A two column version of this can be used, either right-left or left-right
-	
-	
-*/
-.three-cols {
-	.col1 {
-		width: 41.44713695%;
-		margin-right: 3%;
-
-	}
-	.col2 {
-		width: 30.34140976%;
-		margin-right: 3%;
-	}
-	
-	.col3 {
-		width: 22.21145328%;
-		clear: none;
-	}
-}
-.two-cols-equal.third {
-	
-}
 
 .location {
 	.map {

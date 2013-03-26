@@ -27,7 +27,7 @@ h1,h2,h3 {
 
 h4,h5,h6 {
 	font-family: $sans;
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -484,7 +484,18 @@ a {
 
 	}
 	
-	
+	.speaker-links {
+		a {
+			display: inline-block;
+			margin-right: 3%;
+		}
+		span {
+			display: inline-block;
+			font-size: 1.333333333em;
+			line-height: 0.4em;
+			color: $midgrey;
+		}
+	}
 }
 .schedule {
 	.sponsors-teaser {
@@ -540,7 +551,7 @@ a {
 		}
 	}
 }
-.location {
+
 	.map {
 		@include clearfix();
 	}
@@ -573,8 +584,8 @@ a {
 	}
 	.shrewsbury {
 		.container {
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 2em;
+			padding-bottom: 2em;
 		}
 	}
 	.shrewsbury-logo {
@@ -583,6 +594,7 @@ a {
 		max-width: 88%;
 		text-align: center;
 		border: 1px solid $bordergrey;
+		background: #fff;
 	}
 	 a {
 		 img {
@@ -591,5 +603,25 @@ a {
 				}
 			}
 	 }
-}
+	 
+	.where-to-stay {
+		.container {
+			 padding-top: 2em;
+			 padding-bottom: 2em;
+		}
+		.hotel {
+			font-size: .888888889em;
+			p {
+				margin-bottom: 0.1em;
+			}
+		}
+		a {
+			color: $gold;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+
 

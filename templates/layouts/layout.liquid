@@ -18,6 +18,7 @@
         <link href="{{ "large.css" | asset_url }}" rel="stylesheet" type="text/css" media="screen and (min-width: 60em)" />
         <link href="{{ "huge.css" | asset_url }}" rel="stylesheet" type="text/css" media="screen and (min-width: 87.5em)" />
         <link href="{{ "highdpi.css" | asset_url }}" rel="stylesheet" type="text/css" media="screen and (((-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 150dpi))" />
+        <link href="{{ "ss-social-regular.min.css" | asset_url }}" rel="stylesheet" type="text/css" media="all" />
         
         <script type="text/javascript" src="//use.typekit.net/uht6jad.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -37,7 +38,8 @@
        
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
-       
+        <script type="text/javascript" src="{{ "ss-social.min.js" | asset_url }}"></script>
+
         
     </body>
 </html>
