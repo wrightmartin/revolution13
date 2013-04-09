@@ -113,7 +113,6 @@ body {
   .fringe .event h3,
   .fringe .event h4,
   .fringe .event p {
-    background: #fff;
     margin-left: 23.6%; }
 
 .two-cols .col1,
@@ -181,3 +180,22 @@ body {
   position: absolute;
   bottom: 0;
   padding-bottom: 0; }
+
+.sponsors .platinum {
+  max-width: 54em; }
+  .sponsors .platinum li {
+    width: 23.5%;
+    margin-right: 2%; }
+    .sponsors .platinum li:nth-child(2n+2) {
+      margin-right: 2%; }
+    .sponsors .platinum li:nth-child(4n+4) {
+      margin-right: 0; }
+.sponsors .gold {
+  max-width: none; }
+  .sponsors .gold li {
+    width: 10.222222222%;
+    margin-right: 1%; }
+    .sponsors .gold li:nth-child(3n+3) {
+      margin-right: 1%; }
+    .sponsors .gold li:nth-child(9n+9) {
+      margin-right: 0; }
