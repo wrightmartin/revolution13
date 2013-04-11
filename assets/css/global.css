@@ -435,12 +435,9 @@ body {
   max-width: 1400px;
   line-height: 1.5em; }
   body:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
 
 img {
   max-width: 100%; }
@@ -480,7 +477,7 @@ a {
     color: #c1503e; }
 
 .button {
-  font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
   display: inline-block;
   padding: 0.75em 1.75em;
   background: #333;
@@ -503,12 +500,9 @@ a {
   margin: 0 auto;
   padding: 0 4%; }
   .container:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
 
 .content-container {
   max-width: 34em; }
@@ -542,12 +536,9 @@ a {
 .sitenav {
   background: #333333; }
   .sitenav:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
   .sitenav ul {
     margin: 0;
     padding: 0; }
@@ -576,9 +567,21 @@ a {
 
 .page-title {
   background: #fff; }
+  .page-title:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .page-title .container:after {
+    content: "";
+    display: table;
+    clear: both; }
   .page-title h1 {
     margin: 0;
     padding: .5em 0; }
+  .page-title p {
+    font-size: 1.166666667em;
+    line-height: 1.5em;
+    max-width: 37em; }
 
 .hero {
   background-position-x: center;
@@ -606,12 +609,9 @@ a {
   padding-top: 6em;
   padding-bottom: 6em; }
   .about:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
   .about .about-content {
     font-size: 0.875em;
     padding: 3em 3%;
@@ -633,12 +633,9 @@ a {
     text-align: center;
     color: #c1503e; }
   .speakers:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
 
 .photo-grid ul {
   list-style: none outside none;
@@ -659,12 +656,9 @@ a {
     color: #c1503e;
     overflow: hidden; }
   .photo-grid li figure:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
   .photo-grid li img {
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
@@ -748,12 +742,9 @@ a {
   padding-top: 2em;
   padding-bottom: 2em; }
   .sponsors:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
   .sponsors h2 {
     text-align: center; }
   .sponsors ul {
@@ -762,12 +753,16 @@ a {
     list-style: none outside none;
     padding-left: 0;
     max-width: 27em; }
+    .sponsors ul:after {
+      content: "";
+      display: table;
+      clear: both; }
     .sponsors ul li {
       float: left;
       line-height: 1;
       margin-bottom: 1.5em; }
       .sponsors ul li a {
-        background: #fff;
+        background: #ececec;
         padding: 10%;
         display: block;
         line-height: 1;
@@ -846,8 +841,17 @@ a {
     font-weight: 500; }
   .scheduled-event a.reveal {
     color: #c1503e; }
+    .scheduled-event a.reveal span {
+      opacity: 0.2;
+      -webkit-transition: opacity 0.3s ease-out;
+      -moz-transition: opacity 0.3s ease-out;
+      -o-transition: opacity 0.3s ease-out;
+      -ms-transition: opacity 0.3s ease-out;
+      transition: opacity 0.3s ease-out; }
     .scheduled-event a.reveal:hover {
       color: #9a4032; }
+      .scheduled-event a.reveal:hover span {
+        opacity: 1; }
   .scheduled-event h3 {
     font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif;
     font-size: 1em;
@@ -873,6 +877,8 @@ a {
     font-size: 1.333333333em;
     line-height: 0.4em;
     color: #666666; }
+  .scheduled-event:hover .sponsorship-available {
+    opacity: 1; }
 
 .schedule .sponsors-teaser {
   background: #ececec;
@@ -888,6 +894,22 @@ a {
     color: #caa75b; }
   .schedule .sponsors-teaser p {
     line-height: 1.5em; }
+
+.sponsorship-available {
+  opacity: 0.5;
+  background: #ececec;
+  display: inline-block;
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.165em 0.66em;
+  font-size: 0.666666667em;
+  color: #666666;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out; }
 
 .fringe .intro {
   background: #ececec;
@@ -906,32 +928,54 @@ a {
   color: #666666;
   font-weight: 600;
   margin-bottom: 0.5em; }
+  .fringe h4 a {
+    display: inline-block;
+    margin-left: .5em;
+    padding-left: .5em;
+    border-left: 2px solid #ececec; }
 .fringe .event img {
   display: none; }
+.fringe .event:hover .sponsorship-available {
+  opacity: 1; }
 .fringe .rebellion.event {
+  background: #c1503e;
+  border-bottom: 5px solid #ae4838;
+  color: #fff;
   margin-bottom: 3em;
-  padding-bottom: 2em;
-  border-bottom: 5px solid #e9e9e9; }
+  padding: 1.5em 3%; }
   .fringe .rebellion.event:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0; }
+    content: "";
+    display: table;
+    clear: both; }
+  .fringe .rebellion.event h4, .fringe .rebellion.event a {
+    color: #fff; }
+  .fringe .rebellion.event a {
+    border-bottom: 1px dotted #da968b;
+    border-color: #da968b; }
+    .fringe .rebellion.event a:hover {
+      border-bottom-color: #fff; }
   .fringe .rebellion.event p {
     max-width: 34em; }
 
 .map:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
+  content: "";
+  display: table;
+  clear: both; }
 
 .travel {
   line-height: 1.5em; }
+  .travel a {
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #c1503e;
+    color: #fff;
+    padding: 0.33em 0.66em;
+    margin-right: 0.5em;
+    font-size: .875em; }
+    .travel a:hover {
+      background-color: #333333; }
 
 .conference-centre-info {
   background: #c1503e;

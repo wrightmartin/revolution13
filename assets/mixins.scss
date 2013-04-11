@@ -2,17 +2,14 @@
 
 @mixin clearfix {
 	&:after{
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+	 content: "";
+	 display: table;
+	 clear: both;
 	}
 }
 
 @mixin button {
-	font-family: $futura;
+	font-family: $sans;
 	display: inline-block;
 	padding: 0.75em 1.75em;
 	background: #333;

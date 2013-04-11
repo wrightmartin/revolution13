@@ -153,9 +153,18 @@ a {
 
 .page-title {
 	@include background();
+	@include clearfix();
+	.container {
+		@include clearfix();
+	}
 	h1 {
 		margin: 0;
 		padding: .5em 0;
+	}
+	p {
+		font-size: 1.166666667em;
+		line-height: 1.5em;
+		max-width: 37em;
 	}
 }
 
@@ -356,13 +365,14 @@ a {
 		text-align: center;
 		@include unstyled-list();
 		max-width: 27em;
+		@include clearfix();
 		li {
 			float: left;
 			line-height: 1;
 			margin-bottom: 1.5em;
 
 			a {
-				background: #fff;
+				background: $lightgrey;
 				padding: 10%;
 				display: block;
 				line-height: 1;
@@ -466,9 +476,17 @@ a {
 	}
 	a.reveal {
 		color: $red;
+		span {
+			opacity: 0.2;
+			@include prefix(transition, opacity 0.3s ease-out);
+		}
 		&:hover {
 			color: darken($red, 10%);
+			span {
+				opacity: 1;
+			}
 		}
+		
 	}
 	
 
@@ -511,6 +529,11 @@ a {
 			color: $midgrey;
 		}
 	}
+	&:hover {
+		.sponsorship-available {
+			opacity: 1;
+		}
+	}
 }
 .schedule {
 	.sponsors-teaser {
@@ -533,6 +556,19 @@ a {
 			line-height: 1.5em;
 		}
 	}
+}
+
+.sponsorship-available {
+	opacity: 0.5;
+	background: $lightgrey;
+	display: inline-block;
+	font-family: $sans;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0.165em 0.66em; 
+	font-size: 0.666666667em;
+	color: $midgrey;
+	@include prefix(transition, opacity 0.3s ease-out);
 }
 
 .fringe {
@@ -558,22 +594,47 @@ a {
 		color: $midgrey;
 		font-weight: 600;
 		margin-bottom: 0.5em;
+		a {
+			display: inline-block;
+			margin-left: .5em;
+			padding-left: .5em;
+			border-left: 2px solid $lightgrey;
+		}
 	}
 	
 	.event {
 		img {
 			display: none;
 		}
+		&:hover {
+			.sponsorship-available {
+				opacity: 1;
+			}
+		}
+		
 	}
 	.rebellion.event {
 		@include clearfix();
+		background: $red;
+		border-bottom: 5px solid darken($red, 5%);
+		color: #fff;
 		margin-bottom: 3em;
-		padding-bottom: 2em;
+		padding: 1.5em 3%;
+		h4, a {
+			color: #fff;
+		}
+		a {
+			border-bottom: 1px dotted lighten($red, 20%);
+			border-color: lighten($red, 20%);
+			&:hover {
+				border-bottom-color: #fff;
+			}
+		}
+
 		p {
 			max-width: 34em;
 		}
 		
-		border-bottom: 5px solid $bordergrey;
 	}
 }
 
@@ -582,6 +643,20 @@ a {
 	}
 	.travel {
 		line-height: 1.5em;
+		a {
+			font-family: $sans;
+			font-weight: 600;
+			text-transform: uppercase;
+			display: inline-block;
+			background: $red;
+			color: #fff;
+			padding: 0.33em 0.66em;
+			margin-right: 0.5em;
+			font-size: .875em;
+			&:hover {
+				background-color: $black;
+			}
+		}
 	}
 	.conference-centre-info {
 		background: $red;
