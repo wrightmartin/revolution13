@@ -733,14 +733,19 @@ a {
 		@include clearfix();
 		font-family: $sans;
 		margin-bottom: 1em;
+		img {
+			@include prefix(box-sizing, border-box);
+			border: 1px dashed $red;	
+		}
 		a {
 			display: block;
 			@include clearfix();
+			img {
+				border: 1px solid $bordergrey;
+
+			}
 		}
-		img {
-			
-			border: 1px solid $bordergrey;
-		}
+		
 		
 		strong {
 			display: block;

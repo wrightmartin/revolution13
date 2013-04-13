@@ -1035,14 +1035,21 @@ a img:hover, a img:active, a img:focus {
     content: "";
     display: table;
     clear: both; }
+  .sponsors-page li img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px dashed #c1503e; }
   .sponsors-page li a {
     display: block; }
     .sponsors-page li a:after {
       content: "";
       display: table;
       clear: both; }
-  .sponsors-page li img {
-    border: 1px solid #e9e9e9; }
+    .sponsors-page li a img {
+      border: 1px solid #e9e9e9; }
   .sponsors-page li strong {
     display: block;
     visibility: hidden;

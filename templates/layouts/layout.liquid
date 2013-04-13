@@ -33,7 +33,10 @@
             {% include "header" %}
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
-            {% include "sponsors" %}
+            {% block sponsors %}
+            	   {% include "sponsors" %}
+            {% endblock %}
+         
             {% include "footer" %}
        
         <!-- Script block allowing child pages to inject their own scripts -->
