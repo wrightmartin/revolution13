@@ -1055,3 +1055,11 @@ a img:hover, a img:active, a img:focus {
     color: #caa75b; }
   .sidebar p {
     line-height: 1.5em; }
+  .sidebar .button {
+    background: #caa75b;
+    padding: 0.4em 0.75em;
+    line-height: 1.4em;
+    font-size: 1em; }
+    .sidebar .button:hover {
+      background: #c1503e;
+      color: #fff; }
