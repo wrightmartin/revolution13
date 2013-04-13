@@ -69,3 +69,12 @@
 .location .conference-centre-info {
   left: 385px;
   top: 7em; }
+
+.sponsors-page .four-cols .unit {
+  width: 23.5%;
+  margin-right: 2%; }
+.sponsors-page .four-cols .odd,
+.sponsors-page .four-cols .even {
+  margin-right: 2%; }
+.sponsors-page .four-cols .fourth {
+  margin-right: 0; }

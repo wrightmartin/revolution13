@@ -208,3 +208,8 @@ body {
     .sponsors .gold li:nth-child(9n+9),
     .sponsors .gold li .ninth {
       margin-right: 0; }
+
+.sponsors-page .four-cols .unit {
+  width: 48.5%; }
+.sponsors-page .four-cols .even {
+  margin-right: 0; }

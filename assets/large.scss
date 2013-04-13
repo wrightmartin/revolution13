@@ -126,3 +126,20 @@
 		top: 7em;
 	}
 }
+
+.sponsors-page {
+	.four-cols {
+		.unit {
+			width: 23.5%;
+			margin-right: 2%;
+		}
+		.odd,
+		.even {
+			margin-right: 2%;
+		}
+		.fourth {
+			margin-right: 0;
+		}
+	}
+}
+
