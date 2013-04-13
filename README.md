@@ -2,19 +2,18 @@ Revolution13
 ============
 
 Mixture.io project for Shropgeek Revolution 2013
-
 ---
-## Requirements
 
+## Requirements
 - Mixture.io
 - LESS
 - Typekit
-
 ---
+
 ## Layouts
 This project only uses one layout (layout.liquid) with the following includes - header, footer and sponsors
-
 ---
+
 ## Pages
 - About (about.liquid)
 - Fringe (fringe.liquid)
@@ -24,18 +23,16 @@ This project only uses one layout (layout.liquid) with the following includes - 
 - Sponsors (sponsors.liquid)
 - Tickets (tickets.liquid)
 - Venue (venue.liquid)
+---
 
---
 ## Typography
 Served by Typekit
 - FF Tisa Web Pro (ff-tisa-web-pro)
 - Futura PT Condensed (futura-pt-condensed)
 - Freight Sans pro (freight-sans-pro)
-
 ---
-## Grid
 
-	
+## Grid	
 Using a 3 column grid based on a Hecton ratio with a 3% gutter
 - Column one (largest) : 41.44713695%;
 - Column two (middlest) : 30.34140976%;
