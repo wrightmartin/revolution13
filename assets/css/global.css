@@ -806,6 +806,17 @@ a {
     font-weight: 400;
     letter-spacing: 1px; }
 
+.social-footer li {
+  margin-bottom: .75em; }
+  .social-footer li:after {
+    content: "";
+    display: table;
+    clear: both; }
+.social-footer iframe {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
 /*
  Schedule
  */

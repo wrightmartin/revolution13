@@ -7,7 +7,7 @@ Mixture.io project for Shropgeek Revolution 2013
 
 ## Requirements
 - Mixture.io
-- LESS (compiled with Mixture)
+- SASS (compiled with Mixture)
 - Typekit
 
 
