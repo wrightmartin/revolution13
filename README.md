@@ -10,12 +10,13 @@ Mixture.io project for Shropgeek Revolution 2013
 - LESS (compiled with Mixture)
 - Typekit
 
----
 
 ## Layouts
-This project only uses one layout (layout.liquid) with the following includes - header, footer and sponsors
+This project only uses one layout (layout.liquid) with the following includes
+- header
+- footer
+- sponsors
 
----
 
 ## Pages
 - About (about.liquid)
@@ -27,7 +28,6 @@ This project only uses one layout (layout.liquid) with the following includes - 
 - Tickets (tickets.liquid)
 - Venue (venue.liquid)
 
----
 
 ## Typography
 Served by Typekit
@@ -35,7 +35,6 @@ Served by Typekit
 - Futura PT Condensed (futura-pt-condensed)
 - Freight Sans pro (freight-sans-pro)
 
----
 
 ## Grid	
 Using a 3 column grid based on a Hecton ratio with a 3% gutter
