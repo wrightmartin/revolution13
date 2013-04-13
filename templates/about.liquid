@@ -2,5 +2,70 @@
 
 {% block content %}
 	<main role="main">
+		<section class="page-title">
+			<div class="container">
+				<h1>About Shropgeek Revolution</h1>
+			</div>
+		</section>
+		<div class="page container two-cols-even">        
+    		<div class="content-container col1">
+				<p>The history of the internet is one of evolution in technology and revolution in daily life. From its humble beginnings in 1957, through the dot-com crash of the 90's and todays web of convenience: the best online ideas survive, the weak fail.</p>
+				
+				<p>So, have a pint and join us for some of the fittest ideas in true Darwinian spirit in the birthplace of evolutionary thought, Shrewsbury.</p>
+				
+				<p>The Theory of (R)Evolution is an event, run by Shropgeek, showcasing some of the most forward thinking ideas on the web today.</p>
+				
+				<h3>Who should come?</h3>
+				
+				<p>Anyone is welcome, but you won't want to miss it if:</p>
+				
+				<ul>
+					<li>You work in, or want to work in the web industry</li>
+					<li>You're interested in the internet and social media</li>
+					<li>You want to meet other like-minded people</li>
+				</ul>	    				
+				
+	    	</div>
+	    	<div class="col2">
+		    	<div id="slides" class="slides">
+			    	<img src="http://placehold.it/640x328">
+			    	<img src="http://placehold.it/940x528">
+			    	<img src="http://placehold.it/940x528">
+			    	<img src="http://placehold.it/940x528">
+			    	<img src="http://placehold.it/940x528">
+			    </div>
+	    	</div>
+    	</section>
+</div>
+		<div class="page container two-cols-even">        
+
+    			<section>
+    			
+    				<h2>About Shropgeek</h2>
+    				
+    					<div class="content-container">
+							<p>Simply put, we are a collection of like minded people based in and around Shropshire; who like to meet regularly to catchup on the latest goings on and socialise with fellow geeks.</p>
+							
+							<p>Meetups are held regularly on the first friday of each month (although this does change from time to time) at The Admiral Benbow in Shrewsbury. Most of the geeks that attend have a background in IT or an adjoining industry, however anyone is welcome.</p>
+							
+							<p>Everyone has a geeky side (no matter how well hidden), and there is always a topic of conversation for everyone. We are a friendly bunch.</p>
+							
+							<p>If you are interested in coming along to the next gathering, follow us on twitter (<a href="http://twitter.com/#!/shropgeek">@shropgeek)</a> for announcements each month.</p>                       
+    					</div>
+    				</section>
+		</div>
+	
 	</main>
+{% endblock %}
+{% block scripts %}
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="{{ "jquery.slides.min.js" | asset_url }}"></script>
+	<script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
 {% endblock %}

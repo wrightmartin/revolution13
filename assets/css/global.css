@@ -748,7 +748,7 @@ a {
   .sponsors h2 {
     text-align: center; }
   .sponsors ul {
-    margin: 0 auto;
+    margin: 1em auto 0;
     text-align: center;
     list-style: none outside none;
     padding-left: 0;
@@ -762,7 +762,7 @@ a {
       line-height: 1;
       margin-bottom: 1.5em; }
       .sponsors ul li a {
-        background: #ececec;
+        background: #f4f4f4;
         padding: 10%;
         display: block;
         line-height: 1;
@@ -775,12 +775,14 @@ a {
   .sponsors .platinum li {
     width: 48.5%;
     margin-right: 3%; }
-    .sponsors .platinum li:nth-child(2n+2) {
+    .sponsors .platinum li:nth-child(2n+2),
+    .sponsors .platinum li .fourth {
       margin-right: 0; }
   .sponsors .gold li {
     width: 31.333333333%;
     margin-right: 3%; }
-    .sponsors .gold li:nth-child(3n+3) {
+    .sponsors .gold li:nth-child(3n+3),
+    .sponsors .gold li .third {
       margin-right: 0; }
 
 .sitefooter {
@@ -879,21 +881,6 @@ a {
     color: #666666; }
   .scheduled-event:hover .sponsorship-available {
     opacity: 1; }
-
-.schedule .sponsors-teaser {
-  background: #ececec;
-  font-size: 0.875em; }
-  .schedule .sponsors-teaser .content {
-    padding: 1em 6%; }
-  .schedule .sponsors-teaser h2 {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #caa75b; }
-  .schedule .sponsors-teaser p {
-    line-height: 1.5em; }
 
 .sponsorship-available {
   opacity: 0.5;
@@ -1017,3 +1004,54 @@ a img:hover, a img:active, a img:focus {
   color: #caa75b; }
   .where-to-stay a:hover {
     color: #fff; }
+
+/* About */
+.slidesjs-navigation,
+.slidesjs-pagination {
+  display: none; }
+
+/* Sponsors page */
+.sponsors-page h2 {
+  color: #caa75b;
+  margin-bottom: 0.25 em; }
+.sponsors-page ul {
+  list-style: none outside none;
+  padding-left: 0; }
+.sponsors-page li {
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 1em; }
+  .sponsors-page li:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .sponsors-page li a {
+    display: block; }
+    .sponsors-page li a:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .sponsors-page li img {
+    border: 1px solid #e9e9e9; }
+  .sponsors-page li strong {
+    display: block;
+    visibility: hidden;
+    height: 0; }
+.sponsors-page .platinum-sponsors:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.sidebar {
+  background: #ececec;
+  font-size: 0.875em; }
+  .sidebar .content {
+    padding: 1em 6%; }
+  .sidebar h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #caa75b; }
+  .sidebar p {
+    line-height: 1.5em; }

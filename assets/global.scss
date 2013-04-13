@@ -357,11 +357,12 @@ a {
 	@include clearfix();
 	padding-top: 2em;
 	padding-bottom: 2em;
+
 	h2 {
 		text-align: center;
 	}
 	ul {
-		margin: 0 auto;
+		margin: 1em auto 0;
 		text-align: center;
 		@include unstyled-list();
 		max-width: 27em;
@@ -372,7 +373,7 @@ a {
 			margin-bottom: 1.5em;
 
 			a {
-				background: $lightgrey;
+				background: #f4f4f4;
 				padding: 10%;
 				display: block;
 				line-height: 1;
@@ -383,6 +384,7 @@ a {
 				line-height: 1;
 				max-width: 100%;
 				width: 100%;
+					
 			}
 		}
 	}
@@ -391,7 +393,8 @@ a {
 		li {
 			width: 48.5%;
 			margin-right: 3%;
-			&:nth-child(2n+2) {
+			&:nth-child(2n+2),
+			.fourth {
 				margin-right: 0;
 			}
 		}
@@ -401,7 +404,8 @@ a {
 		li {
 			width: 31.333333333%;
 			margin-right: 3%;
-			&:nth-child(3n+3) {
+			&:nth-child(3n+3),
+			.third, {
 				margin-right: 0;
 			}
 		}
@@ -536,26 +540,6 @@ a {
 	}
 }
 .schedule {
-	.sponsors-teaser {
-				background: $lightgrey;
-		.content {
-					
-
-			padding: 1em 6%;
-		}
-		font-size: 0.875em;
-		h2 {
-			font-size: 1em;
-			margin-bottom: 0.5em;
-			font-family: $sans;
-			font-weight: 600;
-			text-transform: uppercase;
-			color: $gold;
-		}
-		p {
-			line-height: 1.5em;
-		}
-	}
 }
 
 .sponsorship-available {
@@ -716,6 +700,65 @@ a {
 			}
 		}
 	}
+
+/* About */
+.slidesjs-navigation,
+.slidesjs-pagination {
+	display: none;
+}
+
+/* Sponsors page */
+.sponsors-page {
+	h2 {
+		color: $gold;
+		margin-bottom: 0.25	em;
+	}
+	ul {
+		@include unstyled-list();
+	}
+	
+	li {
+		@include clearfix();
+		font-family: $sans;
+		margin-bottom: 1em;
+		a {
+			display: block;
+			@include clearfix();
+		}
+		img {
+			
+			border: 1px solid $bordergrey;
+		}
+		
+		strong {
+			display: block;
+			visibility: hidden;
+			height: 0;
+		}
+	}
+	.platinum-sponsors {
+		@include clearfix();
+	}
+}
+
+.sidebar {
+	background: $lightgrey;
+	.content {
+		padding: 1em 6%;
+	}
+	font-size: 0.875em;
+	h2 {
+		font-size: 1em;
+		margin-bottom: 0.5em;
+		font-family: $sans;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $gold;
+	}
+	p {
+		line-height: 1.5em;
+	}
+}
 
 
 

@@ -1,0 +1,127 @@
+{% block title %}Schedule{% endblock %}
+{% block bodyclass %}schedule{% endblock %}
+{% block content %}
+	<main role="main">
+	<section class="page-title">
+		<div class="container">
+			<h1>Sponsors</h1>
+			<p>Without the kind generosity of our sponsors events like (R)evolution wouldn't be possible</p>
+		</div>
+	</section>
+		<div class="page container sponsors-page two-cols">
+			<div class="col1">
+				
+				<div class="platinum-sponsors">
+			
+					<ul class="four-cols">
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit last fourth">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="gold-sponsors">
+					
+					<ul class="five-cols">
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit third">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit fourth">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit fifth">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+						<li class="unit">
+							<a href="#" target="_blank">
+								<img src="../assets/img/sponsorship-logos/greenfields-logo.jpg" alt=""/>
+								<strong>Greenfields IT</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col2 sidebar">
+				<div class="content">
+					<h2>Become a sponsor</h2>
+					<p>(R)Evolution attracts web / mobile designers and developers actively working within the UK or involved with Startups from all over the country.</p>
+					<p>
+As a sponsor, you will have the opportunity to meet 200 digital people and tech evangelists in an under-represented region of the country.</p>
+<a href="#" class="button">Get in touch</a>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}
+
+{% block scripts %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.details').toggle();
+		
+		
+			$('.reveal').click(function(e){ 
+				e.preventDefault();
+				$(this).closest(".scheduled-event").find(".details").slideToggle("fast"); 
+			})
+			
+			$(document).keyup(function(e) {
+				if (e.keyCode == 27)  { $('.the-day').find(".details:visible").slideToggle("fast");  }  // esc 
+    		});
+		});
+	</script>
+{% endblock %}

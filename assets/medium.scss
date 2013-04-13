@@ -150,6 +150,7 @@ body {
 	
 }
 
+.two-cols-even,
 .two-cols,
 .three-cols {
 	.col1 {
@@ -166,6 +167,19 @@ body {
 		width: 47%;
 		float: left;
 		clear: both;
+	}
+}
+
+.four-cols {
+	.unit {
+		width: 23.5%;
+		margin-right: 2%;
+		float: left;
+		margin-bottom: 2em;
+	}
+	
+	.fourth {
+		margin-right: 0;
 	}
 }
 
@@ -220,10 +234,12 @@ body {
 		li {
 			width: 23.5%;
 			margin-right: 2%;
-			&:nth-child(2n+2) {
+			&:nth-child(2n+2),
+			.second {
 				margin-right: 2%;
 			}
-			&:nth-child(4n+4) {
+			&:nth-child(4n+4),
+			.fourth {
 				margin-right: 0;
 			}
 		}
@@ -234,10 +250,12 @@ body {
 		li {
 			width: 11.5%;
 			margin-right: 1%;
-			&:nth-child(3n+3) {
+			&:nth-child(3n+3),
+			third {
 				margin-right: 1%;
 			}
-			&:nth-child(9n+9) {
+			&:nth-child(9n+9),
+			.ninth {
 				margin-right: 0;
 			}
 		}
