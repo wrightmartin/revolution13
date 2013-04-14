@@ -148,7 +148,7 @@ a {
 	height: 22px;
 	width: 22px;
 	background: transparent url(../img/menu.png) center center no-repeat;
-	background-size: 22px 21px;
+	@include prefix(background-size, 22px 21px);
 }
 .sitenav {
 	@include clearfix();

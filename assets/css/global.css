@@ -565,6 +565,10 @@ a {
   height: 22px;
   width: 22px;
   background: transparent url(../img/menu.png) center center no-repeat;
+  -webkit-background-size: 22px 21px;
+  -moz-background-size: 22px 21px;
+  -o-background-size: 22px 21px;
+  -ms-background-size: 22px 21px;
   background-size: 22px 21px; }
   #nav-toggle:after {
     content: "";

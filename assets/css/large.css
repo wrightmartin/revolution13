@@ -28,7 +28,8 @@
   margin-right: 3%; }
 .three-cols .col3 {
   width: 22.21145328%;
-  clear: none; }
+  clear: none;
+  display: inline-block; }
 
 .five-cols .unit {
   width: 18.4%; }

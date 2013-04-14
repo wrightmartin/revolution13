@@ -150,9 +150,7 @@ body {
 .two-cols-even .col3,
 .two-cols .col3,
 .three-cols .col3 {
-  width: 47%;
-  float: left;
-  clear: both; }
+  display: none; }
 
 .four-cols .unit {
   width: 23.5%;
