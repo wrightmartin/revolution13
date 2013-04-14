@@ -27,7 +27,7 @@
 				
 	    	</div>
 	    	<div class="col2">
-	    		<!-- TODO: Photos --> 
+	    		
 		    	<div id="slides" class="slides">
 			    	<img src="http://placehold.it/640x328">
 			    	<img src="http://placehold.it/940x528">
@@ -36,6 +36,7 @@
 			    	<img src="http://placehold.it/940x528">
 			    </div>
 	    	</div>
+	    	<!-- TODO: Photos --> 
     	</section>
 </div>
 		<div class="page container two-cols-even">        
@@ -64,8 +65,40 @@
 	<script>
     $(function(){
       $("#slides").slidesjs({
-        width: 940,
-        height: 528
+      		width: 940,
+	      height: 528,
+	      start: 1,
+	      navigation: {
+	        active: false,
+	        effect: "slide"
+	      },
+	      pagination: {
+	        active: false,
+	        effect: "slide"
+	      },
+	      play: {
+	        active: false,
+	        effect: "fade",
+	        interval: 5000,
+	        auto: true,
+	        swap: true,
+	        pauseOnHover: false,
+	        restartDelay: 2500
+	      },
+	      effect: {
+	        slide: {
+	          speed: 500
+	        },
+	        fade: {
+	          speed: 1000,
+	          crossfade: true
+	        }
+	      },
+	      callback: {
+	        loaded: function() {},
+	        start: function() {},
+	        complete: function() {}
+	      }
       });
     });
   </script>
