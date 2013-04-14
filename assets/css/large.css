@@ -78,3 +78,8 @@
   margin-right: 2%; }
 .sponsors-page .four-cols .fourth {
   margin-right: 0; }
+
+.tickets .attendees a {
+  width: 9.5%;
+  margin-right: .5%;
+  margin-bottom: .5%; }

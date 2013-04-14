@@ -788,5 +788,26 @@ a {
 	}
 }
 
+.tickets {
+	.attendees {
+		@include unstyled-list();
+		@include clearfix();
+		a {
+			display: block;
+			width: 24%;
+			float: left;
+			margin-right: 1%;
+			margin-bottom: 1%;
+		}
+		strong {
+			@include visuallyhidden();
+		}
+		img {
+			display: block;
+		}
+
+	}
+}
+
 
 

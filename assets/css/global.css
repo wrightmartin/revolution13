@@ -1081,3 +1081,28 @@ a img:hover, a img:active, a img:focus {
     .sidebar .button:hover {
       background: #c1503e;
       color: #fff; }
+
+.tickets .attendees {
+  list-style: none outside none;
+  padding-left: 0; }
+  .tickets .attendees:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .tickets .attendees a {
+    display: block;
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%; }
+  .tickets .attendees strong {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  .tickets .attendees img {
+    display: block; }
