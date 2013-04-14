@@ -627,6 +627,12 @@ a {
         margin: 0.25em auto 0;
         display: block; }
 
+.credit {
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875em;
+  color: #666666;
+  text-align: right; }
+
 .speakers {
   background-color: #fff;
   padding-bottom: 5em; }
