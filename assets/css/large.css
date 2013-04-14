@@ -83,3 +83,16 @@
   width: 9.5%;
   margin-right: .5%;
   margin-bottom: .5%; }
+
+.team .unit {
+  width: 23.5%;
+  margin-right: 2%; }
+.team .even {
+  margin-right: 2%; }
+.team .last {
+  margin-right: 0; }
+.team .col1 {
+  width: 55.55286304%;
+  margin-right: 3%; }
+.team .col2 {
+  width: 41.44713695%; }

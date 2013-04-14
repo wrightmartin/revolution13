@@ -1028,6 +1028,34 @@ a img:hover, a img:active, a img:focus {
 .slidesjs-pagination {
   display: none; }
 
+.team {
+  color: #fff;
+  background: #c1503e;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .team .ss-icon {
+    color: #fff; }
+  .team h3 {
+    margin-bottom: 0.5em; }
+  .team .unit {
+    font-size: 0.75em;
+    float: left;
+    width: 47.5%;
+    margin-right: 5%; }
+    .team .unit p {
+      line-height: 1.4em;
+      font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+  .team strong {
+    font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: 500; }
+  .team .even {
+    margin-right: 0; }
+
+.shropgeek {
+  border-top: 1px solid #e9e9e9;
+  padding-top: 2em; }
+
 /* Sponsors page */
 .sponsors-page h2 {
   color: #caa75b;
