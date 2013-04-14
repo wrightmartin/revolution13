@@ -152,19 +152,7 @@
 		}
 	}
 }
-
 .team {
-	.unit {
-		width: 23.5%;
-		margin-right: 2%;
-	}
-	.even {
-		margin-right: 2%;
-	}
-	.last {
-		margin-right: 0;
-	}
-
 	.col1 {
 		width: 55.55286304%;
 		margin-right: 3%;
@@ -174,5 +162,32 @@
 		width: 41.44713695%;
 	}
 
+	.team-grid {
+		.unit {
+			width: 23.5%;
+			margin-right: 2%;
+		}
+		.even {
+			margin-right: 2%;
+		}
+		.last {
+			margin-right: 0;
+		}
+	}
+	
+	.volunteers {
+		.unit {
+			width: 15%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+		}
+		.fourth {
+			margin-right: 2%;
+		}
+		.sixth {
+			margin-right: 0;
+		}
+	}
+	
 }
 

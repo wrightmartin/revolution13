@@ -19,6 +19,7 @@ body {
 
 img {
 	max-width: 100%;
+	display: block;
 }
 
 h1,h2,h3 {
@@ -80,6 +81,10 @@ a {
 
 .content-container {
 	max-width: 34em;
+}
+
+.grid {
+	@include clearfix();
 }
 
 .siteheader {
@@ -741,24 +746,42 @@ a {
 	h3 {
 		margin-bottom: 0.5em;
 	}
-	.unit {
-		font-size: 0.75em;
-		float: left;
-		width: 47.5%;
-		margin-right: 5%;
-		p { 
-			line-height: 1.4em;
-					font-family: $sans;
+	.team-grid {
+		.unit {
+			font-size: 0.75em;
+			float: left;
+			width: 47.5%;
+			margin-right: 5%;
+			p { 
+				line-height: 1.4em;
+				font-family: $sans;
+				margin-bottom: 0.5em;
+			}
+		}
+		.even {
+			margin-right: 0;
 		}
 	}
+	
+	.volunteers {
+
+		.unit {
+			float: left;
+			width: 21.25%;
+			margin-right: 5%;
+			margin-bottom: 5%;
+		}
+		.fourth {
+			margin-right: 0;
+		}
+	}
+	
 	strong {
 		font-family: $sans;
 		font-size: 1.25em;
 		font-weight: 500;
 	}
-	.even {
-		margin-right: 0;
-	}
+	
 }
 
 .shropgeek {

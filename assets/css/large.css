@@ -84,15 +84,23 @@
   margin-right: .5%;
   margin-bottom: .5%; }
 
-.team .unit {
-  width: 23.5%;
-  margin-right: 2%; }
-.team .even {
-  margin-right: 2%; }
-.team .last {
-  margin-right: 0; }
 .team .col1 {
   width: 55.55286304%;
   margin-right: 3%; }
 .team .col2 {
   width: 41.44713695%; }
+.team .team-grid .unit {
+  width: 23.5%;
+  margin-right: 2%; }
+.team .team-grid .even {
+  margin-right: 2%; }
+.team .team-grid .last {
+  margin-right: 0; }
+.team .volunteers .unit {
+  width: 15%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+.team .volunteers .fourth {
+  margin-right: 2%; }
+.team .volunteers .sixth {
+  margin-right: 0; }
