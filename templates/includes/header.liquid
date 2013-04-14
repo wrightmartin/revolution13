@@ -1,4 +1,5 @@
-	<nav class="sitenav container" role="navigation">
+	<div class="nav-wrap">
+	<nav class="sitenav container" role="navigation" id="nav">
 			<ul>	
 				<!-- TODO: mobile nav -->
 				<li 
@@ -31,14 +32,15 @@
 					{% endif %}>
 					<a href="fringe">Fringe</a>
 				</li>
-				<li
+				<li class="last 
 					{% if mixture.url == "tickets" %}
-						class="current"
-					{% endif %}>
+						current
+					{% endif %}">
 					<a href="tickets">Tickets</a>
 				</li>
 			</ul>	
 		</nav>
+	</div>
 	<header class="siteheader" role="banner">
 		
 		<div class="container">

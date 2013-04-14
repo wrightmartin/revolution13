@@ -23,6 +23,40 @@ body {
 	}
 }
 
+.sitenav {
+		padding: 0 4%;
+	width: 92%;
+	ul {
+
+		@include horizontal-list();
+	}
+	li {
+		display: inline-block;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		margin-right: 1em;
+	}
+	li.current {
+		background: transparent url(../img/current-marker.png) center bottom no-repeat;
+		a {
+			color: #fff;
+		}
+	}
+	a {
+		display: inline-block;
+		border: none;
+	}
+
+}
+.js #nav {
+    position: relative;
+    max-height: none;
+}
+  
+#nav-toggle {
+    display: none;
+  }
+
 .about {
 	.about-content {
 		@include clearfix();

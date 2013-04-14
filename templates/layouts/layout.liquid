@@ -22,6 +22,7 @@
         
         <script type="text/javascript" src="//use.typekit.net/uht6jad.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="{{ "responsive-nav.min.js" | asset_url }}"></script>
 
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
@@ -64,6 +65,9 @@
 		    po.src = 'https://apis.google.com/js/plusone.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		  })();
+		</script>
+		<script>
+			var navigation = responsiveNav("#nav");
 		</script>
 		<!-- TODO: Google analytics? --> 
     </body>

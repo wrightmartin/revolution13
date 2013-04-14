@@ -13,6 +13,31 @@ body {
   float: right;
   text-align: right; }
 
+.sitenav {
+  padding: 0 4%;
+  width: 92%; }
+  .sitenav ul li {
+    display: inline-block; }
+  .sitenav li {
+    display: inline-block;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-right: 1em; }
+  .sitenav li.current {
+    background: transparent url(../img/current-marker.png) center bottom no-repeat; }
+    .sitenav li.current a {
+      color: #fff; }
+  .sitenav a {
+    display: inline-block;
+    border: none; }
+
+.js #nav {
+  position: relative;
+  max-height: none; }
+
+#nav-toggle {
+  display: none; }
+
 .about .about-content {
   max-width: 54em;
   margin: 0 auto;

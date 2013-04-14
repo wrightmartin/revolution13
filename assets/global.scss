@@ -121,33 +121,72 @@ a {
 	}
 }
 
+/*! responsive-nav.js v1.0.14 by @viljamis */
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+.nav-wrap {
+	position: relative;
+}
+
+#nav-toggle {
+	display: inline-block;
+	float: right;
+	padding: 0.5em;
+	@include clearfix();
+	@include imagereplacement();
+	height: 22px;
+	width: 22px;
+	background: transparent url(../img/menu.png) center center no-repeat;
+	background-size: 22px 21px;
+}
 .sitenav {
 	@include clearfix();
 	background: $black;
+	padding: 0;
+	width: 100%;
 	ul {
 		margin: 0;
 		padding: 0;
-		@include horizontal-list();
 	}
+	
 	li {
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		margin-right: 1em;
+		display: block;
 	}
+
 	li.current {
-		background: transparent url(../img/current-marker.png) center bottom no-repeat;
+		a {
+			color: $red;
+		}
+
 	}
 	a {
 		font-family: $futura-narrow;
 		text-transform: uppercase;	
 		font-size: 1.25em;
 		color: #fff;
-
-		display: inline-block;
+		display:block;
 		text-align: center;
+		border-bottom: 1px solid transparentize(#fff, 0.8);
+		padding: 0.2em 0;
 		@include hoverActiveFocus {
         	color: $red;
         }
+	}
+	.last {
+		a {
+			border: none;
+		}
 	}
 }
 

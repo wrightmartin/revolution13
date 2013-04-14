@@ -62,3 +62,9 @@ $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
   height: 1px; width: 1px; 
   margin: -1px; padding: 0; border: 0; 
 }
+
+@mixin imagereplacement {
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+}
