@@ -19,6 +19,7 @@ This project only uses one layout (layout.liquid) with the following includes
 
 
 ## Pages
+Create a new page by duplicating blank and naming it appropriately. Remember the filename becomes the page slug
 - About (about.liquid)
 - Fringe (fringe.liquid)
 - Home (index.liquid)
@@ -27,6 +28,8 @@ This project only uses one layout (layout.liquid) with the following includes
 - Sponsors (sponsors.liquid)
 - Tickets (tickets.liquid)
 - Venue (venue.liquid)
+- Terms (terms.liquid)
+- Blank (blank.liquid)
 
 
 ## Typography
