@@ -2,16 +2,29 @@
 body {
   font-size: 1.125em; }
 
+h1.logo {
+  height: 56px;
+  width: 300px;
+  -webkit-background-size: 300px 56px;
+  -moz-background-size: 300px 56px;
+  -o-background-size: 300px 56px;
+  -ms-background-size: 300px 56px;
+  background-size: 300px 56px; }
+
 .siteheader .title {
   width: 50%;
   float: left;
-  padding-bottom: 1em; }
+  padding: 1em 0; }
   .siteheader .title h1 {
     margin: 0; }
 .siteheader .where-and-when {
   width: 50%;
   float: right;
-  text-align: right; }
+  text-align: right;
+  padding-top: 1em; }
+
+.caption {
+  margin-top: 2em; }
 
 .sitenav {
   padding: 0 4%;
@@ -35,23 +48,31 @@ body {
   position: relative;
   max-height: none; }
 
+.nav-wrap:after:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 #nav-toggle {
   display: none; }
 
-.about .about-content {
-  max-width: 54em;
-  margin: 0 auto;
-  background: #fff; }
-  .about .about-content:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .about .about-content div {
-    width: 47.5%;
-    margin-right: 5%;
-    float: left; }
-    .about .about-content div:nth-child(odd) {
-      margin-right: 0; }
+.about {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  .about .about-content {
+    max-width: 54em;
+    margin: 0 auto;
+    background: #fff; }
+    .about .about-content:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .about .about-content div {
+      width: 47.5%;
+      margin-right: 5%;
+      float: left; }
+      .about .about-content div:nth-child(odd) {
+        margin-right: 0; }
 
 .sitefooter > div {
   float: left; }
@@ -80,6 +101,10 @@ body {
     margin-right: 2%; }
   .photo-grid li:nth-child(3n+3) {
     margin-right: 0; }
+  .photo-grid li h3 {
+    font-size: 1.6em; }
+  .photo-grid li p {
+    font-size: 0.75em; }
 
 .register {
   padding-top: 4em;
@@ -125,7 +150,8 @@ body {
       clear: both; }
 
 .fringe .event {
-  padding-bottom: 4em; }
+  padding-bottom: 4em;
+  padding-left: 0; }
   .fringe .event img {
     display: block;
     width: 21.6%;
@@ -141,7 +167,8 @@ body {
 .three-cols .col1 {
   width: 47%;
   margin-right: 6%;
-  float: left; }
+  float: left;
+  margin-bottom: 2em; }
 .two-cols-even .col2,
 .two-cols .col2,
 .three-cols .col2 {
@@ -166,6 +193,8 @@ body {
   margin-right: 2%;
   float: left;
   margin-bottom: 2em; }
+  .five-cols .unit:nth-child(even) {
+    margin-right: 2%; }
 .five-cols .third {
   margin-right: 0; }
 
@@ -238,3 +267,16 @@ body {
   width: 48.5%; }
 .sponsors-page .four-cols .even {
   margin-right: 0; }
+
+.sales-pitch,
+.foreground {
+  min-height: 500px; }
+
+.sales-pitch {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -ms-background-size: 100%;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position-y: 120px; }

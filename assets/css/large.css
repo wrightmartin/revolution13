@@ -46,6 +46,13 @@
     margin-right: 2%; }
   .photo-grid li:nth-child(4n+4) {
     margin-right: 0; }
+  .photo-grid li h3 {
+    font-size: 2em; }
+  .photo-grid li p {
+    font-size: 0.875em; }
+
+.siteheader .where-and-when p {
+  font-size: 1.5em; }
 
 .sitefooter > div {
   margin-right: 3%; }
@@ -105,3 +112,19 @@
   margin-right: 2%; }
 .team .volunteers .sixth {
   margin-right: 0; }
+
+.sales-pitch {
+  padding-top: 15em;
+  background-position-y: 200px;
+  -webkit-background-size: 75%;
+  -moz-background-size: 75%;
+  -o-background-size: 75%;
+  -ms-background-size: 75%;
+  background-size: 75%; }
+
+.caption {
+  margin-top: -10em; }
+
+.about {
+  padding-top: 4em;
+  padding-bottom: 4em; }

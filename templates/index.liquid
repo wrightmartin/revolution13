@@ -1,12 +1,20 @@
+{% layout "home" %}
+
 {% block content %} 
 	<main role="main">
 		
 			<div class="hero sales-pitch container page">
+				
 				<div class="caption">
-	        		<h1>1 day, 8 speakers, 200 attendees</h1>
+					<div class="caption-content">
+	        		<h1 class="logo">Shropgeek (R)evolution</h1>
 	        		<p>We've evolved. Bigger plans, a new format, the same friendly atmosphere</p>
-	        		<p><a href="#" class="button">Register now</a></p>
+	        		<p><a href="#" class="button">Buy tickets</a></p>
+					</div>
 				</div>
+				<div class="foreground">
+					<img id="hero" src="{{ "hero-foreground-small.png" | asset_url }}" alt=""  data-fullsrc="{{ "hero-foreground.png" | asset_url }}">
+									</div>
 			</div>
 		
 		
@@ -26,9 +34,14 @@
 			</div>
 						
 		</section>-->
-		<section class="speakers container page">
+		
+		
+    </main>
+{% endblock %}
+{% block speakers %}
+			<section class="speakers container page">
 			
-				<h2>Our speakers</h2>
+				<h2>Featuring</h2>
 		
 		 <div class="photo-grid">
 		 	<ul>
@@ -83,7 +96,7 @@
 				 			<img src="{{ "rob-mills.jpg" | asset_url }}" alt="">
 					 		<figcaption>
 					 			<h3 class="fn">Robert Mills</h3>
-					 			<p>Author, Designing the invisible</p>
+					 			<p>Designing the invisible</p>
 					 		</figcaption>
 				 		</figure>
 			 		</a>
@@ -124,6 +137,8 @@
 		 				 	</ul>
 		 </div> <!-- /photo-grid -->
 		</section> <!-- /speakers -->
+		{% endblock %}
+		{% block about %}
 		<section class="about container page">
 		 	<div class="about-content">
 			<h2>Shropshire's original web conference</h2>
@@ -136,5 +151,10 @@
 			</div>
 
 		 </section>
-    </main>
-{% endblock %}
+		{% endblock %}
+		
+		{% block scripts %}
+			<script type="text/javascript" src="{{ "responsive-enhance.min.js" | asset_url }}"></script>
+			<script>responsiveEnhance(document.getElementById('hero'), 600);</script>
+		{% endblock %}
+		

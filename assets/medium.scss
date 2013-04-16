@@ -7,11 +7,18 @@
 body {
 	font-size: 1.125em;
 }
+
+h1.logo {
+	height: 56px;
+	width: 300px;
+	@include prefix(background-size, 300px 56px);
+}
+
 .siteheader {
 	.title {
 		width: 50%;
 		float: left;
-		padding-bottom: 1em;
+		padding: 1em 0;
 		h1 {
 			margin: 0;
 		}
@@ -20,11 +27,16 @@ body {
 		width: 50%;
 		float: right;
 		text-align: right;
+		padding-top: 1em;
 	}
 }
 
+.caption {
+	margin-top: 2em;
+}
+
 .sitenav {
-		padding: 0 4%;
+	padding: 0 4%;
 	width: 92%;
 	ul {
 
@@ -52,17 +64,24 @@ body {
     position: relative;
     max-height: none;
 }
-  
+
+.nav-wrap:after {
+	 @include clearfix();
+}
+
 #nav-toggle {
     display: none;
   }
 
 .about {
+	padding-top: 3em;
+	padding-bottom: 3em;
 	.about-content {
 		@include clearfix();
 		max-width: 54em;
 		margin: 0 auto;
 		background: #fff;
+
 		div {
 			width: 47.5%;
 			margin-right: 5%;
@@ -117,8 +136,13 @@ body {
 		&:nth-child(3n+3) {
 			margin-right: 0;
 		}
+		h3 {
+			font-size: 1.6em;
+		}
+		p {
+			font-size: 0.75em;
+		}
 	}
-	
 }
 
 .register {
@@ -175,6 +199,7 @@ body {
 .fringe {
 	.event {
 		padding-bottom: 4em;
+		padding-left: 0;
 	.marker {
 		
 	}
@@ -200,6 +225,7 @@ body {
 		width: 47%;
 		margin-right: 6%;
 		float: left;
+		margin-bottom: 2em;
 	}
 	.col2 {
 		width: 47%;
@@ -231,6 +257,9 @@ body {
 		margin-right: 2%;
 		float: left;
 		margin-bottom: 2em;
+		&:nth-child(even) {
+			margin-right: 2%;
+		}
 	}
 	.third {
 		margin-right: 0;
@@ -312,6 +341,22 @@ body {
 			margin-right: 0;
 		}
 	}
+}
+
+
+.sales-pitch,
+.foreground {
+	min-height: 500px;
+}
+
+.sales-pitch {
+	@include prefix(background-size, 100%);
+	background-attachment: fixed;
+	background-position-y: 120px;
+}
+
+.foreground {
+
 }
 
 

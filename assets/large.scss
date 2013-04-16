@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 .two-cols {
 	.col1 {
 		width: 74.78854671%;
@@ -80,10 +82,23 @@
 		&:nth-child(4n+4) {
 			margin-right: 0;
 		}
+		h3 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 0.875em;
+		}
 	}
 	
 }
 
+.siteheader { 
+	.where-and-when {
+		p {
+			font-size: 1.5em;
+		}
+	}
+}
 
 .sitefooter {
 	> div {
@@ -192,3 +207,22 @@
 	
 }
 
+.sales-pitch {
+	padding-top: 15em;
+	background-position-y: 200px;
+		@include prefix(background-size, 75%);
+
+}
+
+.foreground {
+
+}
+
+.caption {
+	margin-top: -10em;
+}
+
+.about {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}

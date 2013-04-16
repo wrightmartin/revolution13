@@ -92,27 +92,19 @@ a {
 	border-bottom: 1px solid $bordergrey;
 	.container {
 		background-color: #fff;
-		padding-top: 1em;
-		padding-bottom: 1em;
+		padding-top: .5em;
 	}
 	.title {
 		width: 100%;
-		padding: 1em 0;
-		h1 {
-			text-indent: -9999px;
-			background: transparent url(../img/revolution-logo.png) top left no-repeat;
-			width: 300px;
-			height: 56px;
-			background-size: 300px 56px;
-			margin: 0 auto;
-		}
+		padding: 0;	
 	}
 	.where-and-when {
-		padding: 1em 0;
-		text-align: center;
+		padding: 0 0 1em;
+		text-align: left;
+		float: left;
 		p {
 			font-family: $futura-narrow;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			text-transform: uppercase;
 			margin-bottom: 0;
 			
@@ -120,6 +112,27 @@ a {
 		
 	}
 }
+
+.home .siteheader {
+	display: none;
+}
+
+h1.logo {
+	text-indent: -9999px;
+	background: transparent url(../img/revolution-logo.png) top left no-repeat;
+	width: 200px;
+	height: 37px;
+	background-size: 200px 37px;
+	float: left;
+}
+
+.home {
+	h1.logo {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
 
 /*! responsive-nav.js v1.0.14 by @viljamis */
 .js #nav {
@@ -137,6 +150,12 @@ a {
 
 .nav-wrap {
 	position: relative;
+	
+}
+
+.home .nav-wrap {
+	background: $red;
+	@include clearfix();
 }
 
 #nav-toggle {
@@ -149,6 +168,10 @@ a {
 	width: 22px;
 	background: transparent url(../img/menu.png) center center no-repeat;
 	@include prefix(background-size, 22px 21px);
+}
+
+.home #nav-toggle {
+	background-image: url(../img/menu-white.png)
 }
 .sitenav {
 	@include clearfix();
@@ -168,7 +191,6 @@ a {
 		a {
 			color: $red;
 		}
-
 	}
 	a {
 		font-family: $futura-narrow;
@@ -215,29 +237,52 @@ a {
 }
 
 .hero {
-	background-position-x: center;
-	background-position-y: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 200px;
+	min-height: 400px;
 	h1,h2,p {
 		color: #fff;
 	}
 }
 
 .sales-pitch {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	background: url(../img/sunburst-bg.png) center bottom no-repeat;
+	@include prefix(background-size, 200%);
 	background-color: $red;
-	padding-top: 3em;
-	padding-bottom: 3em;
-		.caption {
-		width: 100%;
+	overflow: hidden;
+	
+	
+}
+
+
+.caption {
+	h1.logo {
+		background-image: url(../img/revolution-logo-white.png);
+	}
+	.caption-content {
+		width: 90%;
+		margin: 0 auto;
 		text-align: center;
 		h1 {
-			margin-bottom: 0;
+			margin-bottom: 0.25em;
 		}
 		p {
 			font-size: 1.166666667em;
 		}
+	}
+}
+
+.foreground {
+	height: 220px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-top: 3em;
+	img {
+		position: absolute;
+		bottom: 0;
 	}
 }
 
@@ -246,11 +291,9 @@ a {
 .about {
 	background-color: lighten($red, 40%);
 	@include clearfix();
-	padding-top: 6em;
-	padding-bottom: 6em;
 	.about-content {
 		font-size: 0.875em;
-		padding: 3em 3%;
+		padding: 1em 3%;
 		width: 94%;
 		h2 {
 			text-align: center;
@@ -281,12 +324,13 @@ a {
 	}
 	background-color: #fff;
 	@include clearfix();
-	padding-bottom: 5em;
+	padding-bottom: 2em;
 }
 
 
 
 .photo-grid {
+	padding-bottom: 1em;
 	ul {
 		@include unstyled-list;
 
@@ -332,7 +376,7 @@ a {
 		}
 		
 		h3 {
-			font-size: 2em;
+			font-size: 1.4em;
 			line-height: 1em;
 			text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
 			margin-bottom: 0;
@@ -343,7 +387,7 @@ a {
 			
 			font-style: italic;
 			line-height: 1.2em;
-			font-size: 0.875em;
+			font-size: 0.65em;
 			text-shadow: 0px 1px 1px rgba(0,0,0,0.75);
 			margin-bottom: 0.5em;
 		}
@@ -581,6 +625,7 @@ a {
 		font-size: 0.875em;
 		color: $midgrey;
 		line-height: 1.5em;
+		margin-bottom: 1em;
 	}
 	
 	p {
@@ -637,6 +682,7 @@ a {
 	.event {
 		position: relative;
 		border-left: 5px solid $lightgrey;
+		padding-left: 5%;
 		&.coffee-morning {
 			border-left-color: transparent;
 		}
@@ -723,6 +769,7 @@ a {
 		}
 		.hotel {
 			font-size: .888888889em;
+			margin-bottom: 1em;
 			p {
 				margin-bottom: 0.1em;
 			}
@@ -735,7 +782,7 @@ a {
 		}
 	}
 
-/* About */
+/* About page */
 .slidesjs-navigation,
 .slidesjs-pagination {
 	display: none;
@@ -832,8 +879,20 @@ a {
 	.platinum-sponsors {
 		@include clearfix();
 	}
+	
+	
 }
-
+.five-cols {
+		@include clearfix();
+		.unit {
+			width: 48.5%;
+			float: left;
+			margin-right: 3%;
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+		}
+	}
 .sidebar {
 	background: $lightgrey;
 	.content {
@@ -889,5 +948,13 @@ a {
 	}
 }
 
+.two-cols-even,
+.two-cols,
+.three-cols {
+	.col3 {
+		display: none;
+		
+	}
+}
 
 
