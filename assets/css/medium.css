@@ -125,15 +125,16 @@ body {
       clear: both; }
 
 .fringe .event {
-  margin-bottom: 4em; }
+  padding-bottom: 4em; }
   .fringe .event img {
     display: block;
     width: 21.6%;
-    float: left; }
+    float: left;
+    margin-left: 3%; }
   .fringe .event h3,
   .fringe .event h4,
   .fringe .event p {
-    margin-left: 23.6%; }
+    margin-left: 26.6%; }
 
 .two-cols-even .col1,
 .two-cols .col1,

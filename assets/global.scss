@@ -600,26 +600,7 @@ a {
 			color: $midgrey;
 		}
 	}
-	&:hover {
-		.sponsorship-available {
-			opacity: 1;
-		}
-	}
-}
-.schedule {
-}
-
-.sponsorship-available {
-	opacity: 0.5;
-	background: $lightgrey;
-	display: inline-block;
-	font-family: $sans;
-	font-weight: 600;
-	text-transform: uppercase;
-	padding: 0.165em 0.66em; 
-	font-size: 0.666666667em;
-	color: $midgrey;
-	@include prefix(transition, opacity 0.3s ease-out);
+	
 }
 
 .fringe {
@@ -654,36 +635,22 @@ a {
 	}
 	
 	.event {
+		position: relative;
+		border-left: 5px solid $lightgrey;
+		&.coffee-morning {
+			border-left-color: transparent;
+		}
+		.marker {
+			background: #fff url(../img/red-dot.png) left center no-repeat;
+			width: 16px;
+			height: 16px;
+			@include prefix(background-size, 16px 16px); 
+			position: absolute;
+			top: 0;
+			left: -10px;
+		}
 		img {
 			display: none;
-		}
-		&:hover {
-			.sponsorship-available {
-				opacity: 1;
-			}
-		}
-		
-	}
-	.rebellion.event {
-		@include clearfix();
-		background: $red;
-		border-bottom: 5px solid darken($red, 5%);
-		color: #fff;
-		margin-bottom: 3em;
-		padding: 1.5em 3%;
-		h4, a {
-			color: #fff;
-		}
-		a {
-			border-bottom: 1px dotted lighten($red, 20%);
-			border-color: lighten($red, 20%);
-			&:hover {
-				border-bottom-color: #fff;
-			}
-		}
-
-		p {
-			max-width: 34em;
 		}
 		
 	}
@@ -898,6 +865,10 @@ a {
 }
 
 .tickets {
+	.ticket-bit {
+		margin-bottom: 3em;
+		@include clearfix();
+	}
 	.attendees {
 		@include unstyled-list();
 		@include clearfix();

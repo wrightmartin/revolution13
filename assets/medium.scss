@@ -174,16 +174,20 @@ body {
 
 .fringe {
 	.event {
-		margin-bottom: 4em;
+		padding-bottom: 4em;
+	.marker {
+		
+	}
 		img {
 			display: block;
 			width: 21.6%;
 			float: left;
+			margin-left: 3%;
 		}
 		h3,
 		h4,
 		p {
-			margin-left: 23.6%;
+			margin-left: 26.6%;
 		}
 	}
 	
@@ -242,8 +246,6 @@ body {
 		position: absolute;
 		max-width: 15em;
 		top: 3em;
-		
-		
 		left: 145px;
 	}
 }

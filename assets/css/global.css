@@ -940,24 +940,6 @@ a {
     font-size: 1.333333333em;
     line-height: 0.4em;
     color: #666666; }
-  .scheduled-event:hover .sponsorship-available {
-    opacity: 1; }
-
-.sponsorship-available {
-  opacity: 0.5;
-  background: #ececec;
-  display: inline-block;
-  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0.165em 0.66em;
-  font-size: 0.666666667em;
-  color: #666666;
-  -webkit-transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  -ms-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out; }
 
 .fringe .intro {
   background: #ececec;
@@ -981,29 +963,25 @@ a {
     margin-left: .5em;
     padding-left: .5em;
     border-left: 2px solid #ececec; }
-.fringe .event img {
-  display: none; }
-.fringe .event:hover .sponsorship-available {
-  opacity: 1; }
-.fringe .rebellion.event {
-  background: #c1503e;
-  border-bottom: 5px solid #ae4838;
-  color: #fff;
-  margin-bottom: 3em;
-  padding: 1.5em 3%; }
-  .fringe .rebellion.event:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .fringe .rebellion.event h4, .fringe .rebellion.event a {
-    color: #fff; }
-  .fringe .rebellion.event a {
-    border-bottom: 1px dotted #da968b;
-    border-color: #da968b; }
-    .fringe .rebellion.event a:hover {
-      border-bottom-color: #fff; }
-  .fringe .rebellion.event p {
-    max-width: 34em; }
+.fringe .event {
+  position: relative;
+  border-left: 5px solid #ececec; }
+  .fringe .event.coffee-morning {
+    border-left-color: transparent; }
+  .fringe .event .marker {
+    background: white url(../img/red-dot.png) left center no-repeat;
+    width: 16px;
+    height: 16px;
+    -webkit-background-size: 16px 16px;
+    -moz-background-size: 16px 16px;
+    -o-background-size: 16px 16px;
+    -ms-background-size: 16px 16px;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 0;
+    left: -10px; }
+  .fringe .event img {
+    display: none; }
 
 .map:after {
   content: "";
@@ -1168,6 +1146,12 @@ a img:hover, a img:active, a img:focus {
       background: #c1503e;
       color: #fff; }
 
+.tickets .ticket-bit {
+  margin-bottom: 3em; }
+  .tickets .ticket-bit:after {
+    content: "";
+    display: table;
+    clear: both; }
 .tickets .attendees {
   list-style: none outside none;
   padding-left: 0; }
