@@ -524,14 +524,16 @@ a {
     width: 100%;
     padding: 0; }
   .siteheader .where-and-when {
-    padding: 0 0 1em;
     text-align: left;
     float: left; }
-    .siteheader .where-and-when p {
-      font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-      font-size: 1.2em;
-      text-transform: uppercase;
-      margin-bottom: 0; }
+
+.where-and-when {
+  padding: 0 0 1em; }
+  .where-and-when p {
+    font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0; }
 
 .home .siteheader {
   display: none; }
@@ -668,7 +670,8 @@ h1.logo {
 .caption .caption-content {
   width: 90%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  max-width: 24em; }
   .caption .caption-content h1 {
     margin-bottom: 0.25em; }
   .caption .caption-content p {
