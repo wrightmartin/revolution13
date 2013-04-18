@@ -272,6 +272,8 @@ h1.logo {
 		margin: 0 auto;
 		text-align: center;
 		max-width: 24em;
+		z-index: 1000;
+		position: relative;
 		h1 {
 			margin-bottom: 0.25em;
 		}
