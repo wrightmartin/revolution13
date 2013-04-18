@@ -17,8 +17,8 @@
 					</div>
 				</div>
 				<div class="foreground">
-					<img id="hero" src="{{ "hero-foreground-small.png" | asset_url }}" alt=""  data-fullsrc="{{ "hero-foreground.png" | asset_url }}">
-									</div>
+					<img id="hero" src="{{ "hero-foreground.png" | asset_url }}" alt="">					
+				</div>
 			</div>
 		
 		
@@ -157,8 +157,5 @@
 		 </section>
 		{% endblock %}
 		
-		{% block scripts %}
-			<script type="text/javascript" src="{{ "responsive-enhance.min.js" | asset_url }}"></script>
-			<script>responsiveEnhance(document.getElementById('hero'), 600);</script>
-		{% endblock %}
+		
 		
