@@ -76,10 +76,12 @@
 	li {
 		width: 23.5%;
 		margin-right: 2%;
-		&:nth-child(3n+3) {
+		&.third,
+		&.sixth {
 			margin-right: 2%;
 		}
-		&:nth-child(4n+4) {
+		&.fourth,
+		&.eighth {
 			margin-right: 0;
 		}
 		h3 {

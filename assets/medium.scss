@@ -171,10 +171,14 @@ h1.logo {
 	li {
 		width: 32%;
 		margin-right: 2%;
-		&:nth-child(2n+2) {
+		&.second,
+		&.fourth,
+		&.sixth,
+		&.eighth {
 			margin-right: 2%;
 		}
-		&:nth-child(3n+3) {
+		&.third,
+		&.sixth {
 			margin-right: 0;
 		}
 		h3 {

@@ -44,9 +44,9 @@
 .photo-grid li {
   width: 23.5%;
   margin-right: 2%; }
-  .photo-grid li:nth-child(3n+3) {
+  .photo-grid li.third, .photo-grid li.sixth {
     margin-right: 2%; }
-  .photo-grid li:nth-child(4n+4) {
+  .photo-grid li.fourth, .photo-grid li.eighth {
     margin-right: 0; }
   .photo-grid li h3 {
     font-size: 2em; }

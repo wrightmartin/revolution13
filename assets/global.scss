@@ -354,7 +354,10 @@ h1.logo {
 		width: 49%;
 		margin-right: 2%;
 		overflow: hidden;
-		&:nth-child(2n+2) {
+		&.second,
+		&.fourth,
+		&.sixth,
+		&.eighth {
 			margin-right: 0;
 		}
 		

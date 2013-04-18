@@ -14,5 +14,10 @@
         <link href="{{ "highdpi.css" | asset_url }}" rel="stylesheet" type="text/css" media="screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)" />
         <link href="{{ "ss-social-regular.min.css" | asset_url }}" rel="stylesheet" type="text/css" media="all" />
         
+        <!--[if lte IE 8]>
+	       <link rel="stylesheet" type="text/css" href="{{ "medium.css" | asset_url }}" />
+	       <link rel="stylesheet" type="text/css" href="{{ "large.css" | asset_url }}" />
+		<![endif]-->
+        
         <script type="text/javascript" src="//use.typekit.net/uht6jad.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

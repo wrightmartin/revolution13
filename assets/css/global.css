@@ -740,7 +740,7 @@ h1.logo {
     width: 49%;
     margin-right: 2%;
     overflow: hidden; }
-    .photo-grid li:nth-child(2n+2) {
+    .photo-grid li.second, .photo-grid li.fourth, .photo-grid li.sixth, .photo-grid li.eighth {
       margin-right: 0; }
     .photo-grid li a {
       display: block;

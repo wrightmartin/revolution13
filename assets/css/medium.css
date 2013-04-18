@@ -120,9 +120,9 @@ h1.logo {
 .photo-grid li {
   width: 32%;
   margin-right: 2%; }
-  .photo-grid li:nth-child(2n+2) {
+  .photo-grid li.second, .photo-grid li.fourth, .photo-grid li.sixth, .photo-grid li.eighth {
     margin-right: 2%; }
-  .photo-grid li:nth-child(3n+3) {
+  .photo-grid li.third, .photo-grid li.sixth {
     margin-right: 0; }
   .photo-grid li h3 {
     font-size: 1.6em; }
