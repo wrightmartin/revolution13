@@ -14,9 +14,11 @@
   width: 74.78854671%;
   float: left; }
 
+.about-page .two-cols-even .col1,
 .two-cols-even .col1 {
   width: 41.44713695%;
   margin-right: 3%; }
+.about-page .two-cols-even .col2,
 .two-cols-even .col2 {
   width: 55.55286304%; }
 
@@ -78,6 +80,9 @@
   left: 385px;
   top: 7em; }
 
+.where-to-stay .container {
+  background: transparent; }
+
 .sponsors-page .four-cols .unit {
   width: 23.5%;
   margin-right: 2%; }
@@ -92,22 +97,12 @@
   margin-right: .5%;
   margin-bottom: .5%; }
 
-.team .col1 {
-  width: 55.55286304%;
-  margin-right: 3%; }
-.team .col2 {
-  width: 41.44713695%; }
-.team .team-grid .unit {
-  width: 23.5%;
-  margin-right: 2%; }
-.team .team-grid .even {
-  margin-right: 2%; }
-.team .team-grid .last {
-  margin-right: 0; }
 .team .volunteers .unit {
-  width: 15%;
+  width: 32%;
   margin-right: 2%;
   margin-bottom: 2%; }
+.team .volunteers .third {
+  margin-right: 0; }
 .team .volunteers .fourth {
   margin-right: 2%; }
 .team .volunteers .sixth {

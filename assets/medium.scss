@@ -93,7 +93,48 @@ h1.logo {
 	}
 }
 
+.about-page {
+		.two-cols-even {
+			.col1 {
+				width: 100%;
+				margin: 0;
+			}
+			.col2 {
+				width: 100%;
+				margin: 0;
+			}
+		}
+}
 
+.team {
+	.team-grid {
+		.unit {
+			width: 23.5%;
+			margin-right: 2%;
+		}
+		.even {
+			margin-right: 2%;
+		}
+		.last {
+			margin-right: 0;
+		}
+	}
+	.volunteers {
+		.unit {
+			width: 15%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+		}
+		.fourth {
+			margin-right: 2%;
+		}
+		.sixth {
+			margin-right: 0;
+		}
+	}
+
+
+}
 
 .sitefooter {
 	> div {
@@ -219,7 +260,6 @@ h1.logo {
 }
 
 .two-cols-even,
-.two-cols,
 .three-cols {
 	.col1 {
 		width: 47%;
@@ -235,6 +275,16 @@ h1.logo {
 	.col3 {
 		display: none;
 		
+	}
+}
+
+.two-cols {
+	.col1 {
+		width: 100%;
+		margin: 0;
+	}
+	.col2 {
+		width: 40%;
 	}
 }
 
@@ -283,7 +333,7 @@ h1.logo {
 }
 
 .vista {
-	background: transparent url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
+	background: #000 url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
 	@include prefix(background-size, cover);
 	height: 600px;
 	@include prefix(box-shadow, inset 0 1px 3px rgba(0,0,0,0.2));
@@ -292,7 +342,7 @@ h1.logo {
 
 .where-to-stay {
 	.container {
-		background: transparent;
+		background: rgba(0,0,0,0.6);
 		color: #fff;
 		position: absolute;
 		bottom: 0;

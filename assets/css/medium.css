@@ -74,6 +74,29 @@ h1.logo {
       .about .about-content div:nth-child(odd) {
         margin-right: 0; }
 
+.about-page .two-cols-even .col1 {
+  width: 100%;
+  margin: 0; }
+.about-page .two-cols-even .col2 {
+  width: 100%;
+  margin: 0; }
+
+.team .team-grid .unit {
+  width: 23.5%;
+  margin-right: 2%; }
+.team .team-grid .even {
+  margin-right: 2%; }
+.team .team-grid .last {
+  margin-right: 0; }
+.team .volunteers .unit {
+  width: 15%;
+  margin-right: 2%;
+  margin-bottom: 2%; }
+.team .volunteers .fourth {
+  margin-right: 2%; }
+.team .volunteers .sixth {
+  margin-right: 0; }
+
 .sitefooter > div {
   float: left; }
   .sitefooter > div:last-child {
@@ -163,22 +186,25 @@ h1.logo {
     margin-left: 26.6%; }
 
 .two-cols-even .col1,
-.two-cols .col1,
 .three-cols .col1 {
   width: 47%;
   margin-right: 6%;
   float: left;
   margin-bottom: 2em; }
 .two-cols-even .col2,
-.two-cols .col2,
 .three-cols .col2 {
   width: 47%;
   float: left;
   font-size: 0.875em; }
 .two-cols-even .col3,
-.two-cols .col3,
 .three-cols .col3 {
   display: none; }
+
+.two-cols .col1 {
+  width: 100%;
+  margin: 0; }
+.two-cols .col2 {
+  width: 40%; }
 
 .four-cols .unit {
   width: 23.5%;
@@ -221,7 +247,7 @@ h1.logo {
     left: 145px; }
 
 .vista {
-  background: transparent url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
+  background: black url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -236,7 +262,7 @@ h1.logo {
   position: relative; }
 
 .where-to-stay .container {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   position: absolute;
   bottom: 0;

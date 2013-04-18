@@ -1,5 +1,5 @@
 {% block title %}About{% endblock %}
-
+{% block bodyclass %}about-page{% endblock %}
 {% block content %}
 	<main role="main">
 		<section class="page-title">
@@ -33,7 +33,7 @@
 	    	</div>
     	</section>
 </div>
-		<div class="page container two-cols-even team">        
+		<div class="page container two-cols team">        
 
     				
     				<section class="col1 team-grid">
@@ -75,33 +75,25 @@
     				<section class="col2 volunteers">
 	    				<h3>Volunteers</h3>
 	    				<div class="grid">
-	    					<div class="unit">
+	    					<div class="unit first">
 	    						<img src="{{ "/team/kirsty.jpg" | asset_url }}" alt="" />
 	    					</div>
-	    					<div class="unit">
+	    					<div class="unit second">
 	    						<img src="{{ "/team/martin.jpeg" | asset_url }}" alt="" />
 	    					</div>
-	    					<div class="unit">
+	    					<div class="unit third">
 	    						<img src="{{ "/team/pete.jpg" | asset_url }}" alt="" />
 	    					</div>
 	    					<div class="unit fourth">
 	    						<img src="{{ "/team/kirsty.jpg" | asset_url }}" alt="" />
 	    					</div>
-	    					<div class="unit">
+	    					<div class="unit fifth">
 	    						<img src="{{ "/team/zach.jpeg" | asset_url }}" alt="" />
 	    					</div>
 	    					<div class="unit sixth">
 	    						<img src="{{ "/team/pete.jpg" | asset_url }}" alt="" />
 	    					</div>
-	    					<div class="unit">
-	    						<img src="{{ "/team/kirsty.jpg" | asset_url }}" alt="" />
-	    					</div>
-	    					<div class="unit fourth">
-	    						<img src="{{ "/team/pete.jpg" | asset_url }}" alt="" />
-	    					</div>
-	    					<div class="unit">
-	    						<img src="{{ "/team/zach.jpeg" | asset_url }}" alt="" />
-	    					</div>
+	    					
 	    				</div>
     				</section>
 		</div>

@@ -26,7 +26,7 @@
 	}
 }
 
-
+.about-page .two-cols-even,
 .two-cols-even {
 	.col1 {
 		width: 41.44713695%;
@@ -141,6 +141,13 @@
 		left: 385px;
 		top: 7em;
 	}
+	
+}
+
+.where-to-stay {
+	.container {
+		background: transparent;
+	}
 }
 
 .sponsors-page {
@@ -169,33 +176,14 @@
 	}
 }
 .team {
-	.col1 {
-		width: 55.55286304%;
-		margin-right: 3%;
-	}
-	
-	.col2 {
-		width: 41.44713695%;
-	}
-
-	.team-grid {
+.volunteers {
 		.unit {
-			width: 23.5%;
-			margin-right: 2%;
-		}
-		.even {
-			margin-right: 2%;
-		}
-		.last {
-			margin-right: 0;
-		}
-	}
-	
-	.volunteers {
-		.unit {
-			width: 15%;
+			width: 32%;
 			margin-right: 2%;
 			margin-bottom: 2%;
+		}
+		.third {
+			margin-right: 0;
 		}
 		.fourth {
 			margin-right: 2%;
@@ -204,7 +192,6 @@
 			margin-right: 0;
 		}
 	}
-	
 }
 
 .sales-pitch {
