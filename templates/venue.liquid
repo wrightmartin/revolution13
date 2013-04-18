@@ -1,0 +1,49 @@
+{% block title %}Location{% endblock %}
+{% block bodyclass %}location{% endblock %}
+
+{% block content %}
+	<main role="main">
+		
+		<section class="info three-cols">
+			<div class="container page">
+				<h1>The Shropshire Conference Centre</h1>
+				<div class="intro col1">
+				
+
+<p>The Shropshire Conference Centre is located just outside Shrewsbury. </p>
+
+<p>The only purpose-built auditorium in Shropshire, it shares a large site with the Royal Shrewsbury Hospital, making it easy to find, with dedicated, private parking and great public transport links.</p>
+				</div>
+				<div class="col2 travel">
+					<h3>Arriving by public transport</h3>
+					<p>If you arrive in Shrewsbury by train, there is a bus every 15 minutes to the conference centre from the town centre bus station, just ask for a return to the hospital.
+					</p>
+					<p><a href="#" target="_blank">Directions</a> <a href="http://shropshire.gov.uk/bustimes/stop.jsc?stop=3500B255800" target="_blank">Bus times</a></p>
+				</div><!-- travel -->
+				<div class="col3">
+					<img src="{{ "seats.jpg" | asset_url }}" alt="conference-centre" />
+				</div>
+			</div><!-- container -->
+		</section>
+
+		<section class="map page">
+			<div class="conference-centre-info">
+						<img src="{{ "conference-centre.jpg" | asset_url }}" alt="conference-centre" />
+						<div class="vcard">
+							<div class="fn org">Shropshire Conference Centre</div>
+							<div class="adr">
+							 	<div class="street-address">
+							 		<span>Royal Shrewsbury Hospital</span>
+							 		<span>Mytton Oak Road</span>
+							 	</div>
+							 	<span class="locality">Shrewsbury</span>
+								 <span class="region">Shropshire</span>
+								 <div class="postal-code">SY3 8XQ</div>
+								 <a href="#">Get directions</a>
+							</div><!-- adr -->
+						</div><!-- vcard -->
+					</div><!-- conference-centre-info -->
+		</section>
+
+	</main>
+{% endblock %}
