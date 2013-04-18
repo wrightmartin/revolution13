@@ -72,7 +72,7 @@
     line-height: 1.5em; }
 
 .location .map {
-  background: transparent url(../img/location-map-large.png) left center no-repeat;
+  background: transparent url(../img/location-map-large.jpg) left center no-repeat;
   min-height: 600px; }
 .location .conference-centre-info {
   left: 385px;
