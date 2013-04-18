@@ -28,7 +28,8 @@
        
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
-        <script type="text/javascript" src="{{ "ss-social.min.js" | asset_url }}"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="{{ "revolution.js" | asset_url }}"></script>
 
         <!-- facebook mess -->
         <div id="fb-root"></div>
