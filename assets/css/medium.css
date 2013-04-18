@@ -195,6 +195,8 @@ h1.logo {
   margin-bottom: 2em; }
   .five-cols .unit:nth-child(even) {
     margin-right: 2%; }
+  .five-cols .unit.last {
+    margin-right: 0; }
 .five-cols .third {
   margin-right: 0; }
 

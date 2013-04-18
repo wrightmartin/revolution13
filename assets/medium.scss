@@ -260,6 +260,9 @@ h1.logo {
 		&:nth-child(even) {
 			margin-right: 2%;
 		}
+		&.last {
+			margin-right: 0;
+		}
 	}
 	.third {
 		margin-right: 0;
