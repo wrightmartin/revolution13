@@ -38,6 +38,7 @@ h1.logo {
 .sitenav {
 	padding: 0 4%;
 	width: 92%;
+	position: relative;
 	ul {
 
 		@include horizontal-list();
@@ -54,9 +55,20 @@ h1.logo {
 			color: #fff;
 		}
 	}
+	li.last {
+		margin-right: 0;
+	}
 	a {
 		display: inline-block;
 		border: none;
+	}
+	.hashtag {
+		position: absolute;
+		right: 4%;
+		color: $red;
+		&:hover {
+			color: #fff;
+		}
 	}
 
 }

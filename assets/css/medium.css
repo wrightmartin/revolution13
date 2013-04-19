@@ -28,7 +28,8 @@ h1.logo {
 
 .sitenav {
   padding: 0 4%;
-  width: 92%; }
+  width: 92%;
+  position: relative; }
   .sitenav ul li {
     display: inline-block; }
   .sitenav li {
@@ -40,9 +41,17 @@ h1.logo {
     background: transparent url(../img/current-marker.png) center bottom no-repeat; }
     .sitenav li.current a {
       color: #fff; }
+  .sitenav li.last {
+    margin-right: 0; }
   .sitenav a {
     display: inline-block;
     border: none; }
+  .sitenav .hashtag {
+    position: absolute;
+    right: 4%;
+    color: #c1503e; }
+    .sitenav .hashtag:hover {
+      color: #fff; }
 
 .js #nav {
   position: relative;
