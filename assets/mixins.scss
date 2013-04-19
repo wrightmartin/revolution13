@@ -21,6 +21,7 @@
 	letter-spacing: 1px;
 	font-size: 0.75em;
 	@include prefix (border-radius, 2px);
+	@include prefix (transition, all 0.2s ease-out);
 }
 
 $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");

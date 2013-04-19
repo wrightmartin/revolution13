@@ -281,6 +281,11 @@ h1.logo {
 			font-size: 1.166666667em;
 		}
 	}
+	.button {
+		&:hover {
+			background: #fff;
+		}
+	}
 }
 
 .foreground {
@@ -421,47 +426,6 @@ h1.logo {
 .no-touch .photo-grid img {
 	@include grayscale(1);
 	width: 100%;
-}
-
-.register-box {
-	background: $black;
-	color: #fff;
-	margin-bottom: 2em;
-	h2	{
-		font-size: 1.5em;
-		margin-bottom: 0.5em;
-		a {
-			display: block;
-			color: #fff;
-			background: $red;
-			padding: .33em 4.5%;
-			text-transform: none;
-			font-family: $bodyfont;
-		}
-	}
-	
-	h3 {
-		padding: 0 4.5% .33em;
-		text-transform: none;
-		font-family: $bodyfont;
-		font-size: 1em;
-	}
-	
-	ul {
-		margin-bottom: 1.5em;
-		padding-left: 2.5em;
-		font-size: 0.875em;
-	}
-	
-	.button {
-		margin-left: 1.5em;
-		margin-bottom: 1.5em;
-		background: $red;
-		@include hoverActiveFocus {
-			color: $red;
-			background: #fff;
-		}
-	}
 }
 
 .sponsors {

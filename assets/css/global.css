@@ -493,7 +493,12 @@ a {
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   -ms-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
 
 .container {
   max-width: 1600px;
@@ -677,6 +682,8 @@ h1.logo {
     margin-bottom: 0.25em; }
   .caption .caption-content p {
     font-size: 1.166666667em; }
+.caption .button:hover {
+  background: #fff; }
 
 .foreground {
   height: 220px;
@@ -796,37 +803,6 @@ h1.logo {
   -ms-filter: grayscale(1);
   filter: grayscale(1);
   width: 100%; }
-
-.register-box {
-  background: #333333;
-  color: #fff;
-  margin-bottom: 2em; }
-  .register-box h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em; }
-    .register-box h2 a {
-      display: block;
-      color: #fff;
-      background: #c1503e;
-      padding: .33em 4.5%;
-      text-transform: none;
-      font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif; }
-  .register-box h3 {
-    padding: 0 4.5% .33em;
-    text-transform: none;
-    font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, Serif;
-    font-size: 1em; }
-  .register-box ul {
-    margin-bottom: 1.5em;
-    padding-left: 2.5em;
-    font-size: 0.875em; }
-  .register-box .button {
-    margin-left: 1.5em;
-    margin-bottom: 1.5em;
-    background: #c1503e; }
-    .register-box .button:hover, .register-box .button:active, .register-box .button:focus {
-      color: #c1503e;
-      background: #fff; }
 
 .sponsors {
   background: #fff;
