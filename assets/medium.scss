@@ -98,7 +98,7 @@ h1.logo {
 			width: 47.5%;
 			margin-right: 5%;
 			float: left;
-			&:nth-child(odd) {
+			&.last {
 				margin-right: 0;
 			}
 		}
@@ -372,12 +372,11 @@ h1.logo {
 		li {
 			width: 23.5%;
 			margin-right: 2%;
-			&:nth-child(2n+2),
 			.second {
 				margin-right: 2%;
 			}
-			&:nth-child(4n+4),
-			.fourth {
+			.fourth,
+			.last {
 				margin-right: 0;
 			}
 		}
@@ -389,7 +388,7 @@ h1.logo {
 			width: 11.5%;
 			margin-right: 1%;
 			&:nth-child(3n+3),
-			third {
+			.third {
 				margin-right: 1%;
 			}
 			&:nth-child(9n+9),

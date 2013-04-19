@@ -80,7 +80,7 @@ h1.logo {
       width: 47.5%;
       margin-right: 5%;
       float: left; }
-      .about .about-content div:nth-child(odd) {
+      .about .about-content div.last {
         margin-right: 0; }
 
 .about-page .two-cols-even .col1 {
@@ -282,11 +282,10 @@ h1.logo {
   .sponsors .platinum li {
     width: 23.5%;
     margin-right: 2%; }
-    .sponsors .platinum li:nth-child(2n+2),
     .sponsors .platinum li .second {
       margin-right: 2%; }
-    .sponsors .platinum li:nth-child(4n+4),
-    .sponsors .platinum li .fourth {
+    .sponsors .platinum li .fourth,
+    .sponsors .platinum li .last {
       margin-right: 0; }
 .sponsors .gold {
   max-width: none; }
@@ -294,7 +293,7 @@ h1.logo {
     width: 11.5%;
     margin-right: 1%; }
     .sponsors .gold li:nth-child(3n+3),
-    .sponsors .gold li third {
+    .sponsors .gold li .third {
       margin-right: 1%; }
     .sponsors .gold li:nth-child(9n+9),
     .sponsors .gold li .ninth {
