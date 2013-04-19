@@ -960,6 +960,11 @@ h1.logo {
       margin-left: 0.25em;
       height: 17px;
       width: 17px;
+      -webkit-background-size: 17px;
+      -moz-background-size: 17px;
+      -o-background-size: 17px;
+      -ms-background-size: 17px;
+      background-size: 17px;
       margin-bottom: 0.17em;
       display: inline-block; }
     .scheduled-event a.reveal:hover {
