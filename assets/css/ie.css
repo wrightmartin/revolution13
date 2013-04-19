@@ -3,3 +3,14 @@
 }
 
 /* TODO: IE fixes */
+h1.logo {
+	background-image: url(../img/revolution-logo-small.png);
+}
+
+.home h1.logo {
+	background-image: url(../img/revolution-logo-white-small.png);
+}
+
+.photo-grid li figcaption {
+	background: #000;
+}

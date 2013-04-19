@@ -236,6 +236,7 @@ h1.logo {
 
 .map {
   background: transparent url(../img/location-map-med.jpg) left center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,6 +262,7 @@ h1.logo {
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   height: 600px;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -274,7 +276,8 @@ h1.logo {
   color: #fff;
   position: absolute;
   bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
 
 .sponsors .platinum {
   max-width: 54em; }

@@ -331,8 +331,10 @@ h1.logo {
 		margin-right: 0;
 	}
 }
+
 .map {
 	background: transparent url(../img/location-map-med.jpg) left center no-repeat;
+	background-attachment: fixed;
 	@include prefix(background-size, cover);
 	position: relative;
 	min-height: 400px;
@@ -348,6 +350,7 @@ h1.logo {
 .vista {
 	background: #000 url(../img/shrewsbury-vista-tiltshift.jpg) center bottom no-repeat;
 	@include prefix(background-size, cover);
+	background-attachment: fixed;
 	height: 600px;
 	@include prefix(box-shadow, inset 0 1px 3px rgba(0,0,0,0.2));
 	position: relative;
@@ -360,6 +363,7 @@ h1.logo {
 		position: absolute;
 		bottom: 0;
 		padding-bottom: 0;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 	}
 }
 
