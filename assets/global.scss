@@ -749,9 +749,25 @@ h1.logo {
 	 }
 	 
 	.where-to-stay {
+		
 		.container {
 			 padding-top: 2em;
 			 padding-bottom: 2em;
+			 position: relative;
+		}
+		
+		small {
+			position: absolute;
+			top: 0;
+			right: 4%;
+			color: #fff;
+			opacity: 0.5;
+			a {
+				color: $red;
+			}
+			&:hover {
+				opacity: 1;
+			}
 		}
 		.hotel {
 			font-size: .888888889em;

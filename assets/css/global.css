@@ -1067,7 +1067,18 @@ a img:hover, a img:active, a img:focus {
 
 .where-to-stay .container {
   padding-top: 2em;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  position: relative; }
+.where-to-stay small {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  color: #fff;
+  opacity: 0.5; }
+  .where-to-stay small a {
+    color: #c1503e; }
+  .where-to-stay small:hover {
+    opacity: 1; }
 .where-to-stay .hotel {
   font-size: .888888889em;
   margin-bottom: 1em; }
