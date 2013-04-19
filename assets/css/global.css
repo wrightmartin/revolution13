@@ -952,7 +952,16 @@ h1.logo {
       -moz-transition: opacity 0.3s ease-out;
       -o-transition: opacity 0.3s ease-out;
       -ms-transition: opacity 0.3s ease-out;
-      transition: opacity 0.3s ease-out; }
+      transition: opacity 0.3s ease-out;
+      text-indent: 1000%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: transparent url(../img/plus.png) left center no-repeat;
+      margin-left: 0.25em;
+      height: 17px;
+      width: 17px;
+      margin-bottom: 0.17em;
+      display: inline-block; }
     .scheduled-event a.reveal:hover {
       color: #9a4032; }
       .scheduled-event a.reveal:hover span {

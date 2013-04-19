@@ -607,11 +607,19 @@ h1.logo {
 		span {
 			opacity: 0.2;
 			@include prefix(transition, opacity 0.3s ease-out);
+			@include imagereplacement();
+			background: transparent url(../img/plus.png) left center no-repeat;
+			margin-left: 0.25em;
+			height: 17px;
+			width: 17px;
+			margin-bottom: 0.17em;
+			display: inline-block;
 		}
 		&:hover {
 			color: darken($red, 10%);
 			span {
 				opacity: 1;
+				
 			}
 		}
 		

@@ -5,3 +5,6 @@
 
 .fringe .event .marker {
   background-image: url(../img/red-dot@2.png); }
+
+.scheduled-event a.reveal span {
+  background-image: url(../img/plus@2.png); }
