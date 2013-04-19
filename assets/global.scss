@@ -372,10 +372,6 @@ h1.logo {
 			@include clearfix();
 		}
 		
-		img {
-			@include grayscale(1);
-			width: 100%;
-		}
 		
 		figcaption {
 			display: block;
@@ -420,6 +416,11 @@ h1.logo {
 		}
 	}
 	
+}
+
+.no-touch .photo-grid img {
+	@include grayscale(1);
+	width: 100%;
 }
 
 .register-box {

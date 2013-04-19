@@ -750,13 +750,6 @@ h1.logo {
       content: "";
       display: table;
       clear: both; }
-    .photo-grid li img {
-      -webkit-filter: grayscale(1);
-      -moz-filter: grayscale(1);
-      -o-filter: grayscale(1);
-      -ms-filter: grayscale(1);
-      filter: grayscale(1);
-      width: 100%; }
     .photo-grid li figcaption {
       display: block;
       position: absolute;
@@ -795,6 +788,14 @@ h1.logo {
       -o-transition: bottom 0.2s ease-in;
       -ms-transition: bottom 0.2s ease-in;
       transition: bottom 0.2s ease-in; }
+
+.no-touch .photo-grid img {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+  width: 100%; }
 
 .register-box {
   background: #333333;
