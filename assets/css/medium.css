@@ -89,6 +89,11 @@ h1.logo {
   width: 100%;
   margin: 0; }
 
+.home .where-and-when {
+  font-size: 2em; }
+  .home .where-and-when p span {
+    display: inline; }
+
 .team .team-grid .unit {
   width: 23.5%;
   margin-right: 2%; }

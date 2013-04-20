@@ -99,24 +99,41 @@ a {
 	.where-and-when {
 		text-align: left;
 		float: left;
-
-		
-	}
-
-	
-}
-
-.where-and-when {
-	padding: 0 0 1em;
+		padding: 0 0 1em;
 	p {
 		font-family: $futura-narrow;
 		font-size: 1.2em;
 		text-transform: uppercase;
-		margin-bottom: 0;
+		margin-bottom: 0;	
+	}
 		
 	}
+
 	
 }
+.home {
+
+	.where-and-when {
+		font-family: $futura-narrow;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 500;
+		.page {
+			padding-top: 0;
+		}
+		p {
+			margin-bottom: 0;
+			color: $red;
+			line-height: 1.1em;
+			span {
+				display: block;
+			}
+		}
+		
+	}
+}
+
 
 .home .siteheader {
 	display: none;

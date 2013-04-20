@@ -529,15 +529,28 @@ a {
     padding: 0; }
   .siteheader .where-and-when {
     text-align: left;
-    float: left; }
+    float: left;
+    padding: 0 0 1em; }
+    .siteheader .where-and-when p {
+      font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      margin-bottom: 0; }
 
-.where-and-when {
-  padding: 0 0 1em; }
-  .where-and-when p {
-    font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    margin-bottom: 0; }
+.home .where-and-when {
+  font-family: "futura-pt-condensed", "League Gothic", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500; }
+  .home .where-and-when .page {
+    padding-top: 0; }
+  .home .where-and-when p {
+    margin-bottom: 0;
+    color: #c1503e;
+    line-height: 1.1em; }
+    .home .where-and-when p span {
+      display: block; }
 
 .home .siteheader {
   display: none; }

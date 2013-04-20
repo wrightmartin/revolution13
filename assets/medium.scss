@@ -115,6 +115,21 @@ h1.logo {
 		}
 }
 
+.home {
+
+	.where-and-when {
+		font-size: 2em;
+
+		p {
+	
+			span {
+				display: inline;
+			}
+		}
+		
+	}
+}
+
 .team {
 	.team-grid {
 		.unit {
