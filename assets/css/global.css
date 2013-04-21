@@ -1012,17 +1012,6 @@ h1.logo {
     .travel a:hover {
       background-color: #333333; }
 
-.arrow-down {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  margin-left: -14px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #c1503e; }
-
 .conference-centre-info {
   background: #c1503e;
   color: #fff;
@@ -1032,7 +1021,17 @@ h1.logo {
   left: 0;
   top: 0;
   margin: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in; }
   .conference-centre-info a {
     color: #e0a89f;
     text-transform: uppercase;
@@ -1046,6 +1045,30 @@ h1.logo {
     padding: .5em 4% 1em; }
     .conference-centre-info .vcard .street-address span {
       display: block; }
+  .conference-centre-info .visible {
+    opacity: 1;
+    top: 5.5em; }
+  .conference-centre-info #directionsPanel {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 5;
+    background-color: white;
+    display: none; }
+  .conference-centre-info:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -13px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #c1503e; }
 
 .shrewsbury-logo {
   padding: 2em 6%;

@@ -672,17 +672,7 @@ h1.logo {
 			}
 		}
 	}
-	.arrow-down {
-      	position:absolute;
-      	bottom:-15px;
-      	left:50%;
-      	margin-left:-14px;
-      	width: 0; 
-      	height: 0; 
-      	border-left: 15px solid transparent;
-      	border-right: 15px solid transparent;
-      	border-top: 15px solid #c1503e;
-   }
+
 	.conference-centre-info {
 		background: $red;
 		color: #fff;
@@ -693,6 +683,8 @@ h1.logo {
 		top: 0;
 		margin: 0;
 		max-width: 100%;
+		@include prefix(box-shadow, 0 2px 3px 0px rgba(0,0,0,.3));
+		@include prefix(transition, all .35s ease-in);
 		a {
 			color: lighten($red, 25%);
 			text-transform: uppercase;
@@ -712,6 +704,36 @@ h1.logo {
 				display: block;
 			}
 		}
+		.visible{
+	opacity:1;
+	top:5.5em;
+}
+
+#directionsPanel{
+  position:absolute;
+  padding:10px;
+  right:0;
+  top:0;
+  width:30%;
+  height:100%;
+  z-index:5;
+  background-color:white;
+  display:none;
+}
+		&:after {
+					
+			content:'';
+			position:absolute;
+			bottom:-15px;
+			left:50%;
+			margin-left:-13px;
+			width: 0; 
+			height: 0; 
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-top: 15px solid #c1503e;
+
+		} 
 		
 	}
 	.shrewsbury-logo {

@@ -30,4 +30,73 @@ if(/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ver
 
 
 //map code, from Neil Kinnish (@neiltak - follow this guy)
-$(document).ready(function(){var e=document.createElement("script");e.type="text/javascript";e.src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initMap";document.body.appendChild(e);setTimeout(function(){$(".conference-centre-info").addClass("visible")},750)});var styles=[{stylers:[{hue:"#ff4d00"},{saturation:-64},{weight:.5},{gamma:1},{visibility:"on"}]}];function initMap(){var e={zoom:14,center:new google.maps.LatLng(52.71706,-2.79396),panControl:false,zoomControl:false,scaleControl:false,mapTypeControl:false,scrollwheel:false,draggable:false,disableDefaultUI:true,mapTypeControlOptions:{style:google.maps.MapTypeControlStyle.DROPDOWN_MENU},zoomControlOptions:{style:google.maps.ZoomControlStyle.SMALL},mapTypeId:google.maps.MapTypeId.ROADMAP};var a=new google.maps.Map(document.getElementById("map-canvas"),e);var o=new google.maps.StyledMapType(styles,{name:"Styled Map"});var t=new google.maps.MarkerImage("https://s3.amazonaws.com/mixture-mixed/1/3012/assets/img/marker.png",null,null,null,new google.maps.Size(29,29));var s=new google.maps.LatLng(52.709357,-2.793752);var l=new google.maps.Marker({position:s,map:a,icon:t});a.mapTypes.set("map_style",o);a.setMapTypeId("map_style");var n=new google.maps.LatLng(52.71706,-2.79396);google.maps.event.addDomListener(window,"resize",function(){a.setCenter(n)})}
+var directionsDisplay;
+var directionsService;
+
+var styles = [
+	{
+	  stylers: [
+	    { hue: "#ff4d00" },
+	    { saturation: -64 },
+	    { weight: 0.5 },
+	    { gamma: 1 },
+	    { visibility: "on" }
+	  ]
+	}
+];
+
+$(document).ready(function() {
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initMap';
+	document.body.appendChild(script);
+});
+
+function initMap(){
+	
+	setTimeout(function() {
+		$(".conference-centre-info").addClass("visible");
+	}, 750);
+
+	directionsService = new google.maps.DirectionsService();
+	directionsDisplay = new google.maps.DirectionsRenderer();
+
+	var mapOptions = {
+		zoom: 14,
+		center: new google.maps.LatLng(52.71706,-2.79396),
+		panControl: false,
+	    zoomControl: false,
+	    scaleControl: false,
+	    mapTypeControl: false,
+	    scrollwheel: false,
+	    draggable: false,
+	    disableDefaultUI: true,
+	    mapTypeControlOptions: {
+	    	style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+	    },
+	    zoomControlOptions: {
+    		style: google.maps.ZoomControlStyle.SMALL
+  		},
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+	var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+
+	var myIcon = new google.maps.MarkerImage('/assets/img/marker.png', null, null, null, new google.maps.Size(29,29));
+
+	var myLatLng = new google.maps.LatLng(52.709357,-2.793752);
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		icon: myIcon
+	});
+
+	map.mapTypes.set('map_style', styledMap);
+ 	map.setMapTypeId('map_style');
+
+	var myLatLngCntr = new google.maps.LatLng(52.71706,-2.79396);
+	google.maps.event.addDomListener(window, 'resize', function() {
+    	map.setCenter(myLatLngCntr);
+	});
+}
