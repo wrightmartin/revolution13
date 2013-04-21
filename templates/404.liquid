@@ -1,0 +1,23 @@
+{% layout "404" %}
+
+{% block title %}404{% endblock %}
+{% block bodyclass %}fourohfour{% endblock %}
+
+{% block content %}
+	<div role="main">
+		<section class="error">
+			<div class="description">
+				<h1>Page not found</h1>
+				<p>We're sorry. The page you are looking for is not here. Go back to the <a href="/">homepage</a></p>
+			</div>
+			<figure>
+			<blockquote>I love fools' experiments. I am always making them.</blockquote>
+			<figcaption>Charles Darwin</figcaption>
+			</figure>
+			
+		</section>		
+		<div class="foreground">
+			<img id="hero" src="{{ "hero-foreground.png" | asset_url }}" alt="">					
+		</div>
+	</div>
+{% endblock %}
