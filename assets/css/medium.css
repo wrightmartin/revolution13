@@ -110,6 +110,11 @@ h1.logo {
 .team .volunteers .sixth {
   margin-right: 0; }
 
+.footer-sponsors .platinum li {
+  width: 22%; }
+.footer-sponsors .gold li {
+  width: 9%; }
+
 .sitefooter > div {
   float: left; }
   .sitefooter > div:last-child {
