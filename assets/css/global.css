@@ -1029,10 +1029,21 @@ h1.logo {
   .fringe .event img {
     display: none; }
 
-.map:after {
-  content: "";
-  display: table;
-  clear: both; }
+.map {
+  position: relative;
+  padding: 0; }
+  .map:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.map-canvas {
+  width: 100%;
+  min-height: 600px; }
+  .map-canvas:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .travel {
   line-height: 1.5em; }
@@ -1049,10 +1060,27 @@ h1.logo {
     .travel a:hover {
       background-color: #333333; }
 
+.arrow-down {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -14px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #c1503e; }
+
 .conference-centre-info {
   background: #c1503e;
   color: #fff;
-  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "freight-sans-pro", "Helvetica Neue", Arial, sans-serif;
+  z-index: 300;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  max-width: 100%; }
   .conference-centre-info a {
     color: #e0a89f;
     text-transform: uppercase;
