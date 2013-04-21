@@ -526,7 +526,7 @@ h1.logo {
 	a.reveal {
 		color: $red;
 		span {
-			opacity: 0.2;
+			opacity: 0.33;
 			@include prefix(transition, opacity 0.3s ease-out);
 			@include imagereplacement();
 			background: transparent url(../img/plus.png) left center no-repeat;

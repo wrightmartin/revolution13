@@ -887,7 +887,7 @@ h1.logo {
   .scheduled-event a.reveal {
     color: #c1503e; }
     .scheduled-event a.reveal span {
-      opacity: 0.2;
+      opacity: 0.33;
       -webkit-transition: opacity 0.3s ease-out;
       -moz-transition: opacity 0.3s ease-out;
       -o-transition: opacity 0.3s ease-out;
