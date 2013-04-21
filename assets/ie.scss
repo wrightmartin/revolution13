@@ -1,3 +1,7 @@
-.container {
-	width: 960px;
+.sponsors {
+	li {
+		/* inline-block hack */
+		zoom:1;
+		*display:inline;
+	}
 }

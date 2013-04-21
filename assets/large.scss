@@ -118,18 +118,7 @@
 	
 }
 
-.sponsors {
-	.platinum {
-		li {
-			&:nth-child(2n+2) {
-				margin-right: 2%;
-			}
-			&.last {
-				margin-right: 0;
-			}
-		}
-	}
-}
+
 
 .fringe {
 	.intro {
@@ -164,20 +153,25 @@
 	}
 }
 
-.sponsors-page {
-	.four-cols {
-		.unit {
-			width: 23.5%;
-			margin-right: 2%;
-		}
-		.odd,
-		.even {
-			margin-right: 2%;
-		}
-		.fourth {
-			margin-right: 0;
+.sponsors {
+	li {
+		width: 22.5%;
+		margin-right: 1.5%;
+	}
+}
+
+.footer-sponsors {
+	.platinum {
+		li {
+			width: 18%;
 		}
 	}
+	.gold {
+		li {
+			width: 9%;
+		}
+	}
+
 }
 
 .tickets {

@@ -445,66 +445,6 @@ h1.logo {
 	width: 100%;
 }
 
-.sponsors {
-	background: #fff;
-	border-top: 1px solid $bordergrey;
-	@include clearfix();
-	padding-top: 2em;
-	padding-bottom: 2em;
-
-	h2 {
-		text-align: center;
-	}
-	ul {
-		margin: 1em auto 0;
-		text-align: center;
-		@include unstyled-list();
-		max-width: 27em;
-		@include clearfix();
-		li {
-			float: left;
-			line-height: 1;
-			margin-bottom: 1.5em;
-
-			a {
-				padding: 10%;
-				display: block;
-				line-height: 1;
-				width: 80%;
-			}
-			img {
-				display: block;
-				line-height: 1;
-				max-width: 100%;
-				width: 100%;
-					
-			}
-		}
-	}
-	
-	.platinum {
-		li {
-			width: 48.5%;
-			margin-right: 3%;
-			&:nth-child(2n+2),
-			.fourth {
-				margin-right: 0;
-			}
-		}
-	}
-	
-	.gold {
-		li {
-			width: 31.333333333%;
-			margin-right: 3%;
-			&:nth-child(3n+3),
-			.third, {
-				margin-right: 0;
-			}
-		}
-	}
-}
-
 .sitefooter {
 	background: $black;
 	color: #fff;
@@ -804,6 +744,7 @@ h1.logo {
 			right: 4%;
 			color: #fff;
 			opacity: 0.5;
+			display: none;
 			a {
 				color: $red;
 			}
@@ -886,23 +827,29 @@ h1.logo {
 	padding-top: 2em;
 }
 
-/* Sponsors page */
-.sponsors-page {
+
+.sponsors {
 	h2 {
 		color: $gold;
 		margin-bottom: 0.25	em;
 	}
 	ul {
 		@include unstyled-list();
+		margin: 0;
+		padding: 0;
 	}
 	
 	li {
 		@include clearfix();
 		font-family: $sans;
 		margin-bottom: 1em;
+		display: inline-block;
+		width: 47.5%;
+		margin-right: 2%;
 		img {
 			@include prefix(box-sizing, border-box);
-			border: 1px dashed $red;	
+			border: 1px dashed $red;
+			width: 100%;
 		}
 		a {
 			display: block;
@@ -923,8 +870,17 @@ h1.logo {
 	.platinum-sponsors {
 		@include clearfix();
 	}
-	
-	
+}
+
+.footer-sponsors {
+	border-top: 1px solid $bordergrey;
+	h2 {
+		color: $black;
+		text-align: center;
+	}
+	ul {
+		text-align: center !important;
+	}
 }
 .five-cols {
 		@include clearfix();

@@ -66,11 +66,6 @@
 .sitefooter .previous-footer {
   width: 17.6%; }
 
-.sponsors .platinum li:nth-child(2n+2) {
-  margin-right: 2%; }
-.sponsors .platinum li.last {
-  margin-right: 0; }
-
 .fringe .intro {
   width: 18.21145328%;
   padding: 1.5em 2%; }
@@ -86,14 +81,14 @@
 .where-to-stay .container {
   background: transparent; }
 
-.sponsors-page .four-cols .unit {
-  width: 23.5%;
-  margin-right: 2%; }
-.sponsors-page .four-cols .odd,
-.sponsors-page .four-cols .even {
-  margin-right: 2%; }
-.sponsors-page .four-cols .fourth {
-  margin-right: 0; }
+.sponsors li {
+  width: 22.5%;
+  margin-right: 1.5%; }
+
+.footer-sponsors .platinum li {
+  width: 18%; }
+.footer-sponsors .gold li {
+  width: 9%; }
 
 .tickets .attendees a {
   width: 9.5%;

@@ -1,20 +1,4 @@
-.container {
-  min-width: 960px;
-}
-
-h1.logo {
-	background-image: url(../img/revolution-logo-small.png);
-}
-
-.home h1.logo {
-	background-image: url(../img/revolution-logo-white-small.png);
-}
-
-.photo-grid li figcaption {
-	background: #000;
-}
-
-.foreground {
-	top: 12em;
-}
-		
+.sponsors li {
+  /* inline-block hack */
+  zoom: 1;
+  *display: inline; }
