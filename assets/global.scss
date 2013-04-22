@@ -982,11 +982,14 @@ h1.logo {
 }
 
 .fourohfour {
-	background: $red;
-	padding-bottom: 10em;
+
 	position: relative;
 		.siteheader {
 		display: none;
+	}
+	.main {
+		background: $red;
+		padding-bottom: 10em;
 	}
 	.error {
 		color: #fff;
