@@ -1272,11 +1272,12 @@ a img:hover, a img:active, a img:focus {
   display: none; }
 
 .fourohfour {
-  background: #c1503e;
-  padding-bottom: 10em;
   position: relative; }
   .fourohfour .siteheader {
     display: none; }
+  .fourohfour .main {
+    background: #c1503e;
+    padding-bottom: 10em; }
   .fourohfour .error {
     color: #fff;
     margin: 0 auto;
