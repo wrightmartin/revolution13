@@ -983,13 +983,13 @@ h1.logo {
 
 .fourohfour {
 
-	position: relative;
-		.siteheader {
+	.siteheader {
 		display: none;
 	}
 	.main {
 		background: $red;
 		padding-bottom: 10em;
+		position: relative;
 	}
 	.error {
 		color: #fff;
